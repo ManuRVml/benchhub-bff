@@ -17,6 +17,17 @@
       "hasDetail": true
     },
     {
+      "indicatorId": "ind_margen_ebitda",
+      "code": "IND-MARGEN-EBITDA",
+      "label": "Margen EBITDA (%)",
+      "unit": "percent",
+      "valueKind": "level",
+      "ecopetrol": 39.0,
+      "peerAvg": 32.0,
+      "tierId": 1,
+      "hasDetail": true
+    },
+    {
       "indicatorId": "ind_crec_ebitda",
       "code": "IND-CREC-EBITDA",
       "label": "Crecimiento EBITDA (%)",

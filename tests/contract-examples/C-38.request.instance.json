@@ -1,0 +1,10 @@
+{
+  "name": "Perfil 1 · Descarbonización",
+  "description": "Pares con estrategia de transición energética",
+  "companyIds": [
+    "cmp_shell",
+    "cmp_bp",
+    "cmp_equinor"
+  ],
+  "isDefault": false
+}

@@ -1,0 +1,198 @@
+{
+  "kpis": {
+    "status": "ok",
+    "data": {
+      "companies": 5,
+      "complete": 2,
+      "incomplete": 1,
+      "pendingIndicators": 7
+    }
+  },
+  "insights": {
+    "status": "ok",
+    "data": [
+      {
+        "id": "ins_margen_ebitda",
+        "text": "El grupo Ecopetrol mantiene margen EBITDA superior al promedio de pares a pesar de la caída general del sector."
+      },
+      {
+        "id": "ins_brecha_produccion",
+        "text": "La brecha en crecimiento de producción es el mayor rezago identificado frente a Super Majors."
+      },
+      {
+        "id": "ins_isa_manual",
+        "text": "3 indicadores dependen de la actualización manual de ISA — riesgo para el cierre del informe."
+      },
+      {
+        "id": "ins_roace_cobertura",
+        "text": "6 de 7 compañías reportan ROACE de forma homologada — es el indicador con mayor cobertura para benchmarking directo."
+      },
+      {
+        "id": "ins_fcl_cobertura",
+        "text": "Solo 2 de 7 compañías reportan Flujo de Caja Libre — limita la comparabilidad de este indicador y debería priorizarse en la próxima ronda de homologación."
+      }
+    ]
+  },
+  "companies": {
+    "status": "ok",
+    "data": {
+      "items": [
+        {
+          "id": "cmp_chevron",
+          "name": "Chevron",
+          "initials": "CH",
+          "colorKey": "chevron",
+          "coveragePct": 96,
+          "coverageStatus": "complete",
+          "missingCount": 0
+        },
+        {
+          "id": "cmp_shell",
+          "name": "Shell",
+          "initials": "SH",
+          "colorKey": "shell",
+          "coveragePct": 88,
+          "coverageStatus": "needs_review",
+          "missingCount": 1
+        },
+        {
+          "id": "cmp_equinor",
+          "name": "Equinor",
+          "initials": "EQ",
+          "colorKey": "equinor",
+          "coveragePct": 74,
+          "coverageStatus": "needs_review",
+          "missingCount": 2
+        },
+        {
+          "id": "cmp_bp",
+          "name": "BP",
+          "initials": "BP",
+          "colorKey": "bp",
+          "coveragePct": 91,
+          "coverageStatus": "complete",
+          "missingCount": 1
+        },
+        {
+          "id": "cmp_isa",
+          "name": "ISA",
+          "initials": "IS",
+          "colorKey": "isa",
+          "coveragePct": 52,
+          "coverageStatus": "incomplete",
+          "missingCount": 3
+        }
+      ],
+      "addableCompanies": [
+        {
+          "id": "cmp_exxon",
+          "name": "Exxon"
+        },
+        {
+          "id": "cmp_total",
+          "name": "Total"
+        },
+        {
+          "id": "cmp_petrobras",
+          "name": "Petrobras"
+        },
+        {
+          "id": "cmp_pttep",
+          "name": "PTTEP"
+        },
+        {
+          "id": "cmp_repsol",
+          "name": "Repsol"
+        }
+      ]
+    }
+  },
+  "selected": {
+    "status": "ok",
+    "data": {
+      "companyId": "cmp_chevron",
+      "groups": [
+        {
+          "dimension": "fin",
+          "totalPct": 40,
+          "items": [
+            {
+              "indicatorId": "ind_roace_relativo",
+              "label": "ROACE relativo",
+              "value": 20,
+              "unit": "percent",
+              "isEstimate": false,
+              "justification": null
+            },
+            {
+              "indicatorId": "ind_tbg_flujo_caja_libre",
+              "label": "Flujo de Caja Libre",
+              "value": 20,
+              "unit": "percent",
+              "isEstimate": false,
+              "justification": null
+            }
+          ]
+        },
+        {
+          "dimension": "op",
+          "totalPct": 25,
+          "items": [
+            {
+              "indicatorId": "ind_tbg_crec_produccion_total",
+              "label": "Crecimiento Producción total",
+              "value": 15,
+              "unit": "percent",
+              "isEstimate": false,
+              "justification": null
+            },
+            {
+              "indicatorId": "ind_tbg_programa_competitividad",
+              "label": "Programa de Mejora de la Competitividad",
+              "value": 10,
+              "unit": "percent",
+              "isEstimate": false,
+              "justification": null
+            }
+          ]
+        },
+        {
+          "dimension": "trans",
+          "totalPct": 35,
+          "items": [
+            {
+              "indicatorId": "ind_tbg_trif",
+              "label": "TRIF",
+              "value": 10,
+              "unit": "percent",
+              "isEstimate": false,
+              "justification": null
+            },
+            {
+              "indicatorId": "ind_tbg_reduccion_gei",
+              "label": "Reducción de Emisiones GEI",
+              "value": 10,
+              "unit": "percent",
+              "isEstimate": false,
+              "justification": null
+            },
+            {
+              "indicatorId": "ind_tbg_indice_seguridad",
+              "label": "Índice de seguridad, fatalidades e incidentes",
+              "value": 15,
+              "unit": "percent",
+              "isEstimate": false,
+              "justification": null
+            }
+          ]
+        }
+      ],
+      "missing": []
+    }
+  },
+  "permissions": {
+    "canEditValues": true,
+    "canAddCompany": true,
+    "canRemoveCompany": true
+  }
+}

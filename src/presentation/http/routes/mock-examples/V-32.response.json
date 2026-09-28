@@ -1,0 +1,149 @@
+{
+  "cutOffDate": "2025-12-31",
+  "rangeFrom": 2023,
+  "rangeTo": 2025,
+  "thresholds": {
+    "alert": 70,
+    "warning": 90
+  },
+  "period": "quarter",
+  "sources": [
+    {
+      "id": "capital_iq",
+      "label": "Capital IQ",
+      "isEnabled": true
+    },
+    {
+      "id": "bloomberg",
+      "label": "Bloomberg",
+      "isEnabled": true
+    },
+    {
+      "id": "platts",
+      "label": "Platts",
+      "isEnabled": false
+    },
+    {
+      "id": "interna_ecp",
+      "label": "Fuentes internas Ecopetrol",
+      "isEnabled": true
+    }
+  ],
+  "kvis": [
+    {
+      "id": "kvi_fcl",
+      "label": "Flujo de Caja Libre",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_deuda",
+      "label": "Deuda Bruta / EBITDA",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_cobertura",
+      "label": "Cobertura de Intereses",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_efipareto",
+      "label": "EFI Activos Pareto Upstream",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_tirpareto",
+      "label": "TIR Activos Pareto Upstream",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_efic",
+      "label": "Eficiencias",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_roace",
+      "label": "ROACE",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_roacewacc",
+      "label": "ROACE menos WACC",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_kviport",
+      "label": "KVI del portafolio",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_trr",
+      "label": "TRR (renta variable)",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_bond",
+      "label": "Bond Spread (renta fija)",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_precio",
+      "label": "Precio Objetivo Analistas",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_riesgocred",
+      "label": "Calificación de Riesgo Crediticio",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_divid",
+      "label": "Dividendos Recibidos",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_cti",
+      "label": "CT+i",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_ebitdacapex",
+      "label": "EBITDA / Capex (ISA)",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_divint",
+      "label": "Dividendos recibidos / intereses pagados",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_margenebitda",
+      "label": "Margen EBITDA ISA",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_costoenergia",
+      "label": "Costo Energía GE",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_irr",
+      "label": "IRR",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_diversif",
+      "label": "Estrategia Diversificación",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_pib",
+      "label": "Aporte al PIB",
+      "isIncluded": true
+    }
+  ],
+  "exceptionsText": "",
+  "assistantContext": "",
+  "permissions": {
+    "canConfigure": true
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "dimension": "trans",
+  "rows": [
+    {
+      "rank": 1,
+      "companyId": "cmp_equinor",
+      "name": "Equinor",
+      "initials": "EQ",
+      "colorKey": "equinor",
+      "pct": 33,
+      "isLeader": true,
+      "isEcopetrol": false,
+      "explanation": {
+        "key": "ranking.explain.leader",
+        "params": {
+          "name": "Equinor",
+          "dimension": "trans",
+          "pct": 33
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "companyId": "cmp_petrobras",
+      "name": "Petrobras",
+      "initials": "PE",
+      "colorKey": "petrobras",
+      "pct": 32,
+      "isLeader": false,
+      "isEcopetrol": false,
+      "explanation": {
+        "key": "ranking.explain.peer",
+        "params": {
+          "name": "Petrobras",
+          "rank": 2,
+          "dimension": "trans",
+          "pct": 32,
+          "gapToLeaderPts": 1,
+          "leaderName": "Equinor",
+          "leaderPct": 33
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "companyId": "cmp_bp",
+      "name": "BP",
+      "initials": "BP",
+      "colorKey": "bp",
+      "pct": 30,
+      "isLeader": false,
+      "isEcopetrol": false,
+      "explanation": {
+        "key": "ranking.explain.peer",
+        "params": {
+          "name": "BP",
+          "rank": 3,
+          "dimension": "trans",
+          "pct": 30,
+          "gapToLeaderPts": 3,
+          "leaderName": "Equinor",
+          "leaderPct": 33
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "companyId": "cmp_ecopetrol",
+      "name": "Ecopetrol",
+      "initials": "EC",
+      "colorKey": "ecopetrol",
+      "pct": 25,
+      "isLeader": false,
+      "isEcopetrol": true,
+      "explanation": {
+        "key": "ranking.explain.ecopetrol",
+        "params": {
+          "rank": 4,
+          "dimension": "trans",
+          "pct": 25,
+          "gapToLeaderPts": 8,
+          "leaderName": "Equinor",
+          "leaderPct": 33,
+          "gapToAvgPts": -3
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "companyId": "cmp_shell",
+      "name": "Shell",
+      "initials": "SH",
+      "colorKey": "shell",
+      "pct": 25,
+      "isLeader": false,
+      "isEcopetrol": false,
+      "explanation": {
+        "key": "ranking.explain.peer",
+        "params": {
+          "name": "Shell",
+          "rank": 5,
+          "dimension": "trans",
+          "pct": 25,
+          "gapToLeaderPts": 8,
+          "leaderName": "Equinor",
+          "leaderPct": 33
+        }
+      }
+    },
+    {
+      "rank": 6,
+      "companyId": "cmp_oxy",
+      "name": "Oxy",
+      "initials": "OX",
+      "colorKey": "oxy",
+      "pct": 25,
+      "isLeader": false,
+      "isEcopetrol": false,
+      "explanation": {
+        "key": "ranking.explain.peer",
+        "params": {
+          "name": "Oxy",
+          "rank": 6,
+          "dimension": "trans",
+          "pct": 25,
+          "gapToLeaderPts": 8,
+          "leaderName": "Equinor",
+          "leaderPct": 33
+        }
+      }
+    },
+    {
+      "rank": 7,
+      "companyId": "cmp_totalenergies",
+      "name": "TotalEnergies",
+      "initials": "TO",
+      "colorKey": "totalenergies",
+      "pct": 24,
+      "isLeader": false,
+      "isEcopetrol": false,
+      "explanation": {
+        "key": "ranking.explain.peer",
+        "params": {
+          "name": "TotalEnergies",
+          "rank": 7,
+          "dimension": "trans",
+          "pct": 24,
+          "gapToLeaderPts": 9,
+          "leaderName": "Equinor",
+          "leaderPct": 33
+        }
+      }
+    }
+  ],
+  "permissions": {}
+}

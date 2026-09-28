@@ -1,0 +1,6 @@
+{
+  "entityType": "analysis|indicator|company|section|value_monitor|presentation",
+  "entityId": "branded-id",
+  "text": "comment-content",
+  "parentId": "optional-branded-id-for-reply"
+}

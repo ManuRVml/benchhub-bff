@@ -1,0 +1,87 @@
+{
+  "templateId": "directorio",
+  "templateName": "Directorio Ejecutivo",
+  "accentKey": "template.directorio",
+  "language": "es",
+  "slides": [
+    {
+      "key": "title",
+      "kind": "title",
+      "label": "Portada",
+      "moduleLabel": "Portada",
+      "pageLabel": "1 / 7",
+      "subtitle": "Referenciamiento competitivo · T4 2025"
+    },
+    {
+      "key": "comp|barras",
+      "kind": "bars",
+      "label": "Barras GE vs. pares",
+      "moduleLabel": "Comparativo GE vs. Promedio Pares",
+      "pageLabel": "2 / 7",
+      "note": "Destacar que GE supera al promedio en margen EBITDA pese a la caída del Brent.",
+      "title": "GE vs. Promedio Pares",
+      "maxAbs": 130.7,
+      "rows": [
+        {
+          "indicatorLabel": "ROACE (%)",
+          "ecopetrolValue": 7.4,
+          "peerAverageValue": 5.5,
+          "unit": "percent"
+        },
+        {
+          "indicatorLabel": "Margen EBITDA (%)",
+          "ecopetrolValue": 39,
+          "peerAverageValue": 32,
+          "unit": "percent"
+        }
+      ]
+    },
+    {
+      "key": "panorama|kpis",
+      "kind": "summary",
+      "label": "KPIs resumen",
+      "moduleLabel": "Panorama comparativo de promedios",
+      "pageLabel": "3 / 7",
+      "ecopetrolWeightPct": {
+        "financiera": 45,
+        "operativa": 30,
+        "transversal": 25
+      },
+      "summaryText": "El grupo Ecopetrol mantiene margen EBITDA superior al promedio de pares a pesar de la caída general del sector."
+    },
+    {
+      "key": "panorama|heatmap",
+      "kind": "categories",
+      "label": "Heatmap",
+      "moduleLabel": "Panorama comparativo de promedios",
+      "pageLabel": "4 / 7",
+      "rows": [
+        {
+          "companyName": "Ecopetrol",
+          "financieraPct": 45,
+          "operativaPct": 30,
+          "transversalPct": 25,
+          "isEcopetrol": true
+        },
+        {
+          "companyName": "TotalEnergies",
+          "financieraPct": 62,
+          "operativaPct": 20,
+          "transversalPct": 24,
+          "isEcopetrol": false
+        }
+      ]
+    },
+    {
+      "key": "appendix",
+      "kind": "appendix",
+      "label": "Cierre",
+      "moduleLabel": "Cierre",
+      "pageLabel": "7 / 7",
+      "supportEmail": "analisis.competitivo@ecopetrol.com.co"
+    }
+  ],
+  "permissions": {
+    "canReorder": true
+  }
+}

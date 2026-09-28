@@ -1,0 +1,88 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.9.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Test
+        run: pnpm test
+
+      - name: Coverage
+        run: pnpm test:coverage
+
+      - name: Check architecture
+        run: pnpm check:architecture
+
+      # check:architecture:planted is expected to FAIL: every fixture in tools/arch-fixtures/planted breaks one layer
+      # rule. The gate fails when the command passes (the rules stopped working) or when a rule stops being named.
+      - name: Planted architecture violations
+        run: |
+          set +e
+          pnpm check:architecture:planted > planted.log 2>&1
+          status=$?
+          set -e
+          cat planted.log
+          if [ "$status" -eq 0 ]; then
+            echo "::error::planted violations were not detected"
+            exit 1
+          fi
+          grep -q "9 dependency violations" planted.log
+          grep -q "10 problems (10 errors" planted.log
+
+      - name: Build
+        run: pnpm build
+
+      - name: Build contract
+        run: pnpm contract:build
+
+      - name: Check contract drift
+        run: git diff --exit-code contracts/
+
+  mock-image:
+    needs: verify
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build mock image
+        run: docker build --target mock -t eco-comparator-bff:ci-mock .
+
+      - name: Run mock container
+        run: |
+          docker run -d -p 3001:3001 --name bff-mock eco-comparator-bff:ci-mock
+          curl --retry 10 --retry-connrefused http://localhost:3001/api/v1/health

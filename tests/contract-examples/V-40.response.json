@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "id": "prs_directorio_t4",
+      "name": "Directorio Ejecutivo T4",
+      "createdOn": "2025-10-02",
+      "status": "published",
+      "publishedOn": "2025-10-05",
+      "permissions": {
+        "canEdit": true,
+        "canView": true
+      }
+    },
+    {
+      "id": "prs_storytelling",
+      "name": "Storytelling de Mercado",
+      "createdOn": "2025-09-28",
+      "status": "in_review",
+      "publishedOn": null,
+      "permissions": {
+        "canEdit": true,
+        "canView": true
+      }
+    },
+    {
+      "id": "prs_resumen_sens_q3",
+      "name": "Resumen Sensibilidades Q3",
+      "createdOn": "2025-08-14",
+      "status": "draft",
+      "publishedOn": null,
+      "permissions": {
+        "canEdit": true,
+        "canView": true
+      }
+    }
+  ],
+  "page": 1,
+  "pageSize": 20,
+  "totalItems": 3,
+  "permissions": {
+    "canCreate": true
+  }
+}

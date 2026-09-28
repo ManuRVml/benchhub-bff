@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "id": "ntf_chevron_t4",
+      "type": "dato",
+      "severity": "info",
+      "text": "Nueva actualización disponible: Chevron T4 2025.",
+      "createdAt": "2026-09-25T06:00:00-05:00",
+      "isRead": false,
+      "target": {
+        "route": "/analisis/ana_desempeno_4t2025/resultados"
+      }
+    },
+    {
+      "id": "ntf_isa_bloqueo",
+      "type": "dato",
+      "severity": "error",
+      "text": "ISA no ha remitido información del corte — bloquea 3 indicadores.",
+      "createdAt": "2026-09-24T09:00:00-05:00",
+      "isRead": false,
+      "target": null
+    },
+    {
+      "id": "ntf_mantenimiento",
+      "type": "sistema",
+      "severity": "info",
+      "text": "Mantenimiento programado del sistema el sábado de 10pm a 12am.",
+      "createdAt": "2026-09-19T08:00:00-05:00",
+      "isRead": true,
+      "target": null
+    }
+  ],
+  "page": 1,
+  "pageSize": 20,
+  "totalItems": 11,
+  "unreadCount": 11,
+  "permissions": {}
+}

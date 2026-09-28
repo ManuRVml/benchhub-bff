@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "id": "cmt_01JA3PC2AR",
+      "kind": "comment",
+      "author": {
+        "name": "Alejandra Ríos",
+        "roleLabelKey": "role.executiveIntegral"
+      },
+      "text": "Lista para compartir con el comité.",
+      "createdAt": "2026-09-26T10:00:00-05:00",
+      "status": "pending",
+      "decision": null,
+      "replies": []
+    },
+    {
+      "id": "cmt_01JA3PC1JS",
+      "kind": "comment",
+      "author": {
+        "name": "Jorge Salas",
+        "roleLabelKey": "role.executiveViewer"
+      },
+      "text": "Buen resumen — ¿podemos incluir el comparativo de OPEX en la siguiente diapositiva?",
+      "createdAt": "2026-09-25T10:00:00-05:00",
+      "status": "pending",
+      "decision": null,
+      "replies": []
+    }
+  ],
+  "page": 1,
+  "pageSize": 20,
+  "totalItems": 2,
+  "permissions": {
+    "canComment": true,
+    "canReply": true,
+    "canRequestChange": false,
+    "canResolve": true
+  }
+}

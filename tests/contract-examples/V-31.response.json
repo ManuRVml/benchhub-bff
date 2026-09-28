@@ -1,0 +1,38 @@
+{
+  "centerPct": 96.15,
+  "categories": [
+    {
+      "id": "financiero",
+      "label": "Financiero",
+      "colorKey": "chart.category.financiero",
+      "weightPct": 60,
+      "kviCount": 9,
+      "compliancePct": 94.69
+    },
+    {
+      "id": "mercado",
+      "label": "Mercado",
+      "colorKey": "chart.category.mercado",
+      "weightPct": 15,
+      "kviCount": 4,
+      "compliancePct": 98.91
+    },
+    {
+      "id": "estrategico",
+      "label": "Estratégico",
+      "colorKey": "chart.category.estrategico",
+      "weightPct": 20,
+      "kviCount": 8,
+      "compliancePct": 97.51
+    },
+    {
+      "id": "grupos_interes",
+      "label": "Grupos de Interés",
+      "colorKey": "chart.category.gruposInteres",
+      "weightPct": 5,
+      "kviCount": 1,
+      "compliancePct": 100
+    }
+  ],
+  "permissions": {}
+}

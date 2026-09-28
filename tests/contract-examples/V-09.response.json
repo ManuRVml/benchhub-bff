@@ -1,0 +1,121 @@
+{
+  "analysis": {
+    "id": "ana_desempeno_4t_2025",
+    "title": "Desempeño comparativo — 4T 2025",
+    "status": "in_review",
+    "lifecycleState": "preparation",
+    "periodLabel": {
+      "year": 2025,
+      "quarter": 4
+    }
+  },
+  "horizon": "tbg",
+  "horizonOptions": [
+    {
+      "id": "tbg",
+      "labelKey": "results.horizon.tbg"
+    },
+    {
+      "id": "ilp",
+      "labelKey": "results.horizon.ilp"
+    },
+    {
+      "id": "union",
+      "labelKey": "results.horizon.union"
+    }
+  ],
+  "modules": [
+    {
+      "id": "actionRow",
+      "order": 1,
+      "isGated": false,
+      "visibleInHorizons": [
+        "tbg",
+        "ilp",
+        "union"
+      ]
+    },
+    {
+      "id": "companyCoverage",
+      "order": 2,
+      "isGated": false,
+      "visibleInHorizons": [
+        "tbg",
+        "ilp"
+      ]
+    },
+    {
+      "id": "peerAverageComparison",
+      "order": 3,
+      "isGated": false,
+      "visibleInHorizons": [
+        "tbg",
+        "ilp",
+        "union"
+      ]
+    },
+    {
+      "id": "companyComparison",
+      "order": 4,
+      "isGated": false,
+      "visibleInHorizons": [
+        "tbg",
+        "ilp",
+        "union"
+      ]
+    },
+    {
+      "id": "reportSummary",
+      "order": 10,
+      "isGated": false,
+      "visibleInHorizons": [
+        "tbg",
+        "ilp"
+      ]
+    },
+    {
+      "id": "footerActions",
+      "order": 11,
+      "isGated": false,
+      "visibleInHorizons": [
+        "tbg",
+        "ilp"
+      ]
+    }
+  ],
+  "companySet": [
+    {
+      "id": "cmp_chevron",
+      "name": "Chevron",
+      "colorKey": "chevron"
+    },
+    {
+      "id": "cmp_shell",
+      "name": "Shell",
+      "colorKey": "shell"
+    }
+  ],
+  "analysisTabs": [
+    {
+      "id": "configuration",
+      "isEnabled": true
+    },
+    {
+      "id": "results",
+      "isEnabled": true
+    },
+    {
+      "id": "presentation",
+      "isEnabled": true,
+      "presentationId": "prs_desempeno_4t_2025"
+    }
+  ],
+  "permissions": {
+    "canEditValues": true,
+    "canEditWeights": true,
+    "canRecalculate": true,
+    "canCreatePresentation": true,
+    "canExport": true,
+    "canGenerateNarrative": true
+  }
+}

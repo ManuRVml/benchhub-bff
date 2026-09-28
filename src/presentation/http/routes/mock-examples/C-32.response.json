@@ -1,0 +1,8 @@
+{
+  "text": "generated-comment-text",
+  "status": "suggestion",
+  "generatedBy": {
+    "model": "mock-llm",
+    "version": "1"
+  }
+}

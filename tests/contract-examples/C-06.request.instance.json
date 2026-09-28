@@ -1,0 +1,17 @@
+{
+  "overrides": [
+    {
+      "companyId": "cmp_shell",
+      "indicatorId": "ind_margen_ebitda",
+      "value": 18.4,
+      "isEstimate": true,
+      "justification": "Estimado a partir del reporte trimestral 2T-2026."
+    },
+    {
+      "companyId": "cmp_chevron",
+      "indicatorId": "ind_margen_ebitda",
+      "value": null,
+      "isEstimate": false
+    }
+  ]
+}

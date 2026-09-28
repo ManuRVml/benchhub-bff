@@ -1,0 +1,52 @@
+{
+  "scope": {
+    "entities": [
+      "grupo_ecopetrol"
+    ],
+    "cadence": "quarterly",
+    "currentPeriod": {
+      "year": 2025,
+      "quarter": 4
+    }
+  },
+  "competitors": [
+    {
+      "id": "cmp_chevron",
+      "name": "Chevron"
+    },
+    {
+      "id": "cmp_exxon",
+      "name": "Exxon"
+    }
+  ],
+  "indicatorGroups": [
+    {
+      "id": "rentabilidad",
+      "label": "Rentabilidad",
+      "count": 3,
+      "items": [
+        {
+          "id": "ind_roace",
+          "label": "ROACE"
+        },
+        {
+          "id": "ind_margen_ebitda",
+          "label": "Margen EBITDA"
+        }
+      ]
+    }
+  ],
+  "exclusionAlert": {
+    "thresholdPct": 60,
+    "companies": [
+      {
+        "id": "cmp_isa",
+        "name": "ISA",
+        "coveragePct": 52
+      }
+    ]
+  },
+  "permissions": {
+    "canGenerate": false
+  }
+}

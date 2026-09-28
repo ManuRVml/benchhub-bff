@@ -1,0 +1,22 @@
+{
+  "screen": "monitor-valor",
+  "state": {
+    "filters": {
+      "corte": "2026-04",
+      "cumplimiento": [
+        "risk",
+        "watch"
+      ]
+    },
+    "columns": [
+      "kvi",
+      "meta",
+      "metaReto",
+      "real"
+    ],
+    "sort": {
+      "key": "resultPct",
+      "direction": "asc"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "dimension": "fin",
+  "rows": [
+    {
+      "rank": 1,
+      "companyId": "cmp_totalenergies",
+      "name": "TotalEnergies",
+      "initials": "TO",
+      "colorKey": "totalenergies",
+      "pct": 62,
+      "isLeader": true,
+      "isEcopetrol": false,
+      "explanation": {
+        "key": "ranking.explain.leader",
+        "params": {
+          "name": "TotalEnergies",
+          "dimension": "fin",
+          "pct": 62
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "companyId": "cmp_ecopetrol",
+      "name": "Ecopetrol",
+      "initials": "EC",
+      "colorKey": "ecopetrol",
+      "pct": 45,
+      "isLeader": false,
+      "isEcopetrol": true,
+      "explanation": {
+        "key": "ranking.explain.ecopetrol",
+        "params": {
+          "rank": 3,
+          "dimension": "fin",
+          "pct": 45,
+          "gapToLeaderPts": 17,
+          "leaderName": "TotalEnergies",
+          "leaderPct": 62,
+          "gapToAvgPts": 2
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "companyId": "cmp_shell",
+      "name": "Shell",
+      "initials": "SH",
+      "colorKey": "shell",
+      "pct": 40,
+      "isLeader": false,
+      "isEcopetrol": false,
+      "explanation": {
+        "key": "ranking.explain.peer",
+        "params": {
+          "name": "Shell",
+          "rank": 3,
+          "dimension": "fin",
+          "pct": 40,
+          "gapToLeaderPts": 5,
+          "leaderName": "Chevron",
+          "leaderPct": 45
+        }
+      }
+    }
+  ],
+  "permissions": {}
+}

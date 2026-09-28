@@ -1,0 +1,23 @@
+{
+  "company": {
+    "id": "cmp_chevron",
+    "name": "Chevron",
+    "colorKey": "chevron"
+  },
+  "country": "Estados Unidos",
+  "category": "Super Major",
+  "business": "Integrado global",
+  "segments": [
+    "Upstream",
+    "Downstream",
+    "Chemicals"
+  ],
+  "news": [
+    {
+      "id": "nws_01J9Y9C3D4",
+      "headline": "Producción récord en el Pérmico impulsa el flujo de caja.",
+      "impact": "up"
+    }
+  ],
+  "permissions": {}
+}

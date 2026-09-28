@@ -1,0 +1,81 @@
+{
+  "name": "eco-comparator-bff",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "devDependencies": {
+    "@asteasolutions/zod-to-openapi": "9.1.0",
+    "@commitlint/cli": "21.2.3",
+    "@commitlint/config-conventional": "21.2.3",
+    "@eslint/js": "10.0.1",
+    "@types/compression": "1.8.1",
+    "@types/cookie-parser": "1.4.10",
+    "@types/express": "5.0.6",
+    "@types/node": "24.13.6",
+    "@types/supertest": "7.2.1",
+    "@vitest/coverage-v8": "5.0.1",
+    "@vitest/eslint-plugin": "1.6.27",
+    "dependency-cruiser": "18.4.0",
+    "eslint": "10.11.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-import-resolver-typescript": "4.4.5",
+    "eslint-plugin-boundaries": "7.2.0",
+    "eslint-plugin-import-x": "4.17.1",
+    "eslint-plugin-n": "18.3.0",
+    "eslint-plugin-security": "4.0.1",
+    "globals": "17.12.0",
+    "husky": "9.1.7",
+    "lint-staged": "17.5.1",
+    "prettier": "3.9.9",
+    "supertest": "7.3.0",
+    "tsup": "8.5.1",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "typescript-eslint": "8.70.1",
+    "vitest": "5.0.1",
+    "yaml": "2.9.1"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check:architecture": "depcruise --config .dependency-cruiser.cjs src tools/arch-fixtures/valid",
+    "check:architecture:planted": "node tools/architecture/check-planted.mjs",
+    "contract:examples": "node tools/contract/extract-examples.mjs",
+    "verify": "pnpm lint && pnpm typecheck && pnpm test",
+    "dev": "tsx watch src/main.ts",
+    "build": "tsup",
+    "start": "node dist/main.js",
+    "image:build": "${CONTAINER_ENGINE:-podman} build --target runtime -t eco-comparator-bff:local .",
+    "image:build:mock": "${CONTAINER_ENGINE:-podman} build --target mock -t eco-comparator-bff:local-mock .",
+    "image:mock": "docker build --target mock -t eco-comparator-bff:0.1.0-mock .",
+    "contract:build": "tsx tools/contract/build-openapi.ts",
+    "contract:diff": "node tools/contract/diff.mjs",
+    "contract:pack": "node tools/contract/pack.mjs",
+    "package:with-web": "node scripts/package-with-web.mjs"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --max-warnings 0",
+      "prettier --check"
+    ]
+  },
+  "dependencies": {
+    "compression": "1.8.2",
+    "cookie-parser": "1.4.7",
+    "express": "5.2.1",
+    "express-rate-limit": "8.7.0",
+    "helmet": "8.3.0",
+    "pino": "10.3.1",
+    "pino-http": "11.0.0",
+    "zod": "4.6.5"
+  }
+}

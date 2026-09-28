@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "title": "presentation-title",
+    "date": "2026-04-30",
+    "language": "es",
+    "templateId": "directorio"
+  },
+  "modules": [
+    {
+      "id": "comp",
+      "charts": [
+        {
+          "id": "barras",
+          "isSelected": true
+        }
+      ]
+    }
+  ],
+  "includeCover": true,
+  "includeClosing": true,
+  "notes": {
+    "comp|barras": "optional note"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "templateId": "directorio",
+  "templateName": "Directorio Ejecutivo",
+  "accentKey": "template.directorio",
+  "language": "es",
+  "slides": [
+    {
+      "key": "title",
+      "kind": "title",
+      "label": "Portada",
+      "moduleLabel": "Portada",
+      "pageLabel": "1 / 7",
+      "subtitle": "Referenciamiento competitivo · T4 2025"
+    },
+    {
+      "key": "comp|barras",
+      "kind": "bars",
+      "label": "Barras GE vs. pares",
+      "moduleLabel": "Comparativo GE vs. Promedio Pares",
+      "pageLabel": "2 / 7",
+      "note": "Destacar que GE supera al promedio en margen EBITDA pese a la caída del Brent.",
+      "title": "GE vs. Promedio Pares",
+      "maxAbs": 130.7,
+      "rows": [
+        {
+          "indicatorLabel": "ROACE (%)",
+          "ecopetrolValue": 7.4,
+          "peerAverageValue": 5.5,
+          "unit": "percent"
+        },
+        {
+          "indicatorLabel": "Margen EBITDA (%)",
+          "ecopetrolValue": 39,
+          "peerAverageValue": 32,
+          "unit": "percent"
+        },
+        {
+          "indicatorLabel": "Crecimiento EBITDA (%)",
+          "ecopetrolValue": -13.8,
+          "peerAverageValue": -2.2,
+          "unit": "percent"
+        },
+        {
+          "indicatorLabel": "Prueba ácida (x)",
+          "ecopetrolValue": 1.3,
+          "peerAverageValue": 0.8,
+          "unit": "ratio_x"
+        }
+      ]
+    },
+    {
+      "key": "panorama|kpis",
+      "kind": "summary",
+      "label": "KPIs resumen",
+      "moduleLabel": "Panorama comparativo de promedios",
+      "pageLabel": "3 / 7",
+      "ecopetrolWeightPct": {
+        "financiera": 45,
+        "operativa": 30,
+        "transversal": 25
+      },
+      "summaryText": "El grupo Ecopetrol mantiene margen EBITDA superior al promedio de pares a pesar de la caída general del sector."
+    },
+    {
+      "key": "panorama|heatmap",
+      "kind": "categories",
+      "label": "Heatmap",
+      "moduleLabel": "Panorama comparativo de promedios",
+      "pageLabel": "4 / 7",
+      "rows": [
+        {
+          "companyName": "Ecopetrol",
+          "financieraPct": 45,
+          "operativaPct": 30,
+          "transversalPct": 25,
+          "isEcopetrol": true
+        },
+        {
+          "companyName": "TotalEnergies",
+          "financieraPct": 62,
+          "operativaPct": 20,
+          "transversalPct": 24,
+          "isEcopetrol": false
+        },
+        {
+          "companyName": "BP",
+          "financieraPct": 55,
+          "operativaPct": 15,
+          "transversalPct": 30,
+          "isEcopetrol": false
+        }
+      ]
+    },
+    {
+      "key": "peso|barras",
+      "kind": "findings",
+      "label": "Barras apiladas",
+      "moduleLabel": "Composición de peso por línea de indicador",
+      "pageLabel": "5 / 7",
+      "rows": [
+        {
+          "companyName": "Ecopetrol",
+          "financieraPct": 45,
+          "operativaPct": 30,
+          "transversalPct": 25,
+          "totalPct": 100
+        },
+        {
+          "companyName": "TotalEnergies",
+          "financieraPct": 62,
+          "operativaPct": 20,
+          "transversalPct": 24,
+          "totalPct": 106
+        },
+        {
+          "companyName": "BP",
+          "financieraPct": 55,
+          "operativaPct": 15,
+          "transversalPct": 30,
+          "totalPct": 100
+        }
+      ]
+    },
+    {
+      "key": "hallazgos|lista",
+      "kind": "hallazgos",
+      "label": "Lista de hallazgos",
+      "moduleLabel": "Hallazgos de IA",
+      "pageLabel": "6 / 7",
+      "findings": [
+        {
+          "text": "El grupo Ecopetrol mantiene margen EBITDA superior al promedio de pares a pesar de la caída general del sector."
+        },
+        {
+          "text": "La brecha en crecimiento de producción es el mayor rezago identificado frente a Super Majors."
+        },
+        {
+          "text": "3 indicadores dependen de la actualización manual de ISA — riesgo para el cierre del informe."
+        },
+        {
+          "text": "6 de 7 compañías reportan ROACE de forma homologada — es el indicador con mayor cobertura para benchmarking directo."
+        },
+        {
+          "text": "Solo 2 de 7 compañías reportan Flujo de Caja Libre — limita la comparabilidad de este indicador y debería priorizarse en la próxima ronda de homologación."
+        }
+      ],
+      "status": "suggestion"
+    },
+    {
+      "key": "appendix",
+      "kind": "appendix",
+      "label": "Cierre",
+      "moduleLabel": "Cierre",
+      "pageLabel": "7 / 7",
+      "supportEmail": "analisis.competitivo@ecopetrol.com.co"
+    }
+  ],
+  "permissions": {
+    "canReorder": true
+  }
+}

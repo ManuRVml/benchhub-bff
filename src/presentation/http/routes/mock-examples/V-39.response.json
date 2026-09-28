@@ -1,0 +1,172 @@
+{
+  "baseScore": 91.8,
+  "categories": [
+    {
+      "id": "financiero",
+      "label": "Financiero",
+      "targetPct": 60,
+      "kvis": [
+        {
+          "kviId": "kvi_fcl",
+          "label": "Flujo de Caja Libre",
+          "weightPct": 12,
+          "monitorPct": 100,
+          "band": "ok"
+        },
+        {
+          "kviId": "kvi_deuda",
+          "label": "Deuda Bruta / EBITDA",
+          "weightPct": 6,
+          "monitorPct": 72,
+          "band": "watch"
+        },
+        {
+          "kviId": "kvi_cobertura",
+          "label": "Cobertura de Intereses",
+          "weightPct": 6,
+          "monitorPct": 75,
+          "band": "watch"
+        },
+        {
+          "kviId": "kvi_efic",
+          "label": "Eficiencias",
+          "weightPct": 18,
+          "monitorPct": 100,
+          "band": "ok"
+        },
+        {
+          "kviId": "kvi_roace",
+          "label": "ROACE",
+          "weightPct": 18,
+          "monitorPct": 94,
+          "band": "ok"
+        }
+      ]
+    },
+    {
+      "id": "mercado",
+      "label": "Mercado",
+      "targetPct": 15,
+      "kvis": [
+        {
+          "kviId": "kvi_trr",
+          "label": "TRR (renta variable)",
+          "weightPct": 5,
+          "monitorPct": 100,
+          "band": "ok"
+        },
+        {
+          "kviId": "kvi_bond",
+          "label": "Bond Spread (renta fija)",
+          "weightPct": 5,
+          "monitorPct": 97,
+          "band": "ok"
+        },
+        {
+          "kviId": "kvi_precio",
+          "label": "Precio Objetivo Analistas",
+          "weightPct": 5,
+          "monitorPct": 89,
+          "band": "watch"
+        }
+      ]
+    },
+    {
+      "id": "estrategico",
+      "label": "Estratégico",
+      "targetPct": 20,
+      "kvis": [
+        {
+          "kviId": "kvi_divid",
+          "label": "Dividendos Recibidos",
+          "weightPct": 2,
+          "monitorPct": 97,
+          "band": "ok"
+        },
+        {
+          "kviId": "kvi_cti",
+          "label": "CT+i",
+          "weightPct": 2,
+          "monitorPct": 93,
+          "band": "ok"
+        },
+        {
+          "kviId": "kvi_divint",
+          "label": "Dividendos / intereses pagados",
+          "weightPct": 2,
+          "monitorPct": 34,
+          "band": "critical"
+        },
+        {
+          "kviId": "kvi_margenebitda",
+          "label": "Margen EBITDA ISA",
+          "weightPct": 2,
+          "monitorPct": 75,
+          "band": "watch"
+        },
+        {
+          "kviId": "kvi_costoenergia",
+          "label": "Costo Energía GE",
+          "weightPct": 2,
+          "monitorPct": 100,
+          "band": "ok"
+        },
+        {
+          "kviId": "kvi_irr",
+          "label": "IRR",
+          "weightPct": 8,
+          "monitorPct": 100,
+          "band": "ok"
+        },
+        {
+          "kviId": "kvi_diversif",
+          "label": "Estrategia Diversificación",
+          "weightPct": 2,
+          "monitorPct": 61,
+          "band": "critical"
+        }
+      ]
+    },
+    {
+      "id": "grupos_interes",
+      "label": "Grupos de Interés",
+      "targetPct": 5,
+      "kvis": [
+        {
+          "kviId": "kvi_pib",
+          "label": "Aporte al PIB",
+          "weightPct": 5,
+          "monitorPct": 91,
+          "band": "ok"
+        }
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "kviId": "kvi_deuda",
+      "label": "Deuda Bruta / EBITDA",
+      "gapPts": 28,
+      "weightPct": 6,
+      "tone": "action"
+    },
+    {
+      "kviId": "kvi_cobertura",
+      "label": "Cobertura de Intereses",
+      "gapPts": 25,
+      "weightPct": 6,
+      "tone": "action"
+    },
+    {
+      "kviId": "kvi_precio",
+      "label": "Precio Objetivo Analistas",
+      "gapPts": 11,
+      "weightPct": 5,
+      "tone": "watch"
+    }
+  ],
+  "permissions": {
+    "canSimulate": true,
+    "canGeneratePlan": true
+  }
+}

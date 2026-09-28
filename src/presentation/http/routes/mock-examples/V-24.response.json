@@ -1,0 +1,133 @@
+{
+  "indicator": {
+    "id": "ind_roace",
+    "label": "ROACE (%)",
+    "unit": "percent",
+    "contextKey": "above_peers"
+  },
+  "kpis": {
+    "status": "ok",
+    "data": {
+      "ecopetrol": 7.4,
+      "peerAvg": 5.5,
+      "geVsAvgPct": 34.5,
+      "deltaVsPeersPct": 34.5
+    }
+  },
+  "series": {
+    "status": "ok",
+    "data": {
+      "periods": {
+        "previous": {
+          "label": "T4 2024"
+        },
+        "current": {
+          "label": "T4 2025"
+        }
+      },
+      "rows": [
+        {
+          "companyId": "cmp_ecopetrol",
+          "name": "Ecopetrol",
+          "isEcopetrol": true,
+          "previous": 10.2,
+          "current": 7.4,
+          "deltaPct": -27.5
+        },
+        {
+          "companyId": "cmp_conocophillips",
+          "name": "ConocoPhillips",
+          "isEcopetrol": false,
+          "previous": 9,
+          "current": 7.2,
+          "deltaPct": -20
+        },
+        {
+          "companyId": "cmp_pttep",
+          "name": "PTTEP",
+          "isEcopetrol": false,
+          "previous": 8.5,
+          "current": 6.7,
+          "deltaPct": -21.2
+        },
+        {
+          "companyId": "cmp_exxon",
+          "name": "Exxon",
+          "isEcopetrol": false,
+          "previous": 7.5,
+          "current": 6.7,
+          "deltaPct": -10.7
+        },
+        {
+          "companyId": "cmp_shell",
+          "name": "Shell",
+          "isEcopetrol": false,
+          "previous": 6.3,
+          "current": 6.5,
+          "deltaPct": 3.2
+        },
+        {
+          "companyId": "cmp_total",
+          "name": "Total",
+          "isEcopetrol": false,
+          "previous": 7.8,
+          "current": 6.1,
+          "deltaPct": -21.8
+        },
+        {
+          "companyId": "cmp_equinor",
+          "name": "Equinor",
+          "isEcopetrol": false,
+          "previous": 8.7,
+          "current": 5.4,
+          "deltaPct": -37.9
+        },
+        {
+          "companyId": "cmp_oxy",
+          "name": "Oxy",
+          "isEcopetrol": false,
+          "previous": 6.4,
+          "current": 3.8,
+          "deltaPct": -40.6
+        },
+        {
+          "companyId": "cmp_bp",
+          "name": "BP",
+          "isEcopetrol": false,
+          "previous": 0.9,
+          "current": 1.3,
+          "deltaPct": 44.4
+        }
+      ],
+      "peerAvgCurrent": 5.5
+    }
+  },
+  "insight": {
+    "status": "ok",
+    "data": {
+      "text": "Ecopetrol supera el promedio de pares en este indicador, sosteniendo una posición competitiva incluso con presión en el entorno de mercado.",
+      "status": "suggestion"
+    }
+  },
+  "traceability": {
+    "status": "ok",
+    "data": {
+      "source": "Capital IQ · Estados financieros trimestrales",
+      "period": {
+        "year": 2025,
+        "quarter": 4
+      },
+      "updatedAt": "2026-09-24T15:00:00-05:00",
+      "history": [
+        {
+          "text": "Alejandra actualizó la fuente a Capital IQ.",
+          "occurredAt": "2026-09-24T15:00:00-05:00"
+        }
+      ]
+    }
+  },
+  "permissions": {
+    "canComment": true,
+    "canRequestChange": true
+  }
+}

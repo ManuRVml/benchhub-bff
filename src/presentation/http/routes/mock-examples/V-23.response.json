@@ -1,0 +1,32 @@
+{
+  "scope": "visualization",
+  "items": [
+    {
+      "dimension": "fin",
+      "tone": "ok",
+      "text": {
+        "key": "reco.weights.ok",
+        "params": {
+          "dimension": "fin",
+          "ecopetrolPct": 45,
+          "peerAvgPct": 43
+        }
+      }
+    },
+    {
+      "dimension": "trans",
+      "tone": "ok",
+      "text": {
+        "key": "reco.weights.ok",
+        "params": {
+          "dimension": "trans",
+          "ecopetrolPct": 25,
+          "peerAvgPct": 28
+        }
+      }
+    }
+  ],
+  "countActionable": 0,
+  "status": "suggestion",
+  "permissions": {}
+}

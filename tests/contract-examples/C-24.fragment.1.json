@@ -1,0 +1,8 @@
+{
+  "mode": "scenario",
+  "baseRoace": 7.4,
+  "simulatedRoace": 8.1,
+  "peerAvgRoace": 5.5,
+  "gapClosedPct": 45,
+  "status": "calculated"
+}

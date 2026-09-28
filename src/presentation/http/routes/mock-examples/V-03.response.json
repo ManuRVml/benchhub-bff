@@ -1,0 +1,163 @@
+{
+  "banner": {
+    "status": "ok",
+    "data": {
+      "text": "Detecté 3 cambios relevantes en el sector durante las últimas 24 horas: caída de margen en Shell, alza de producción en Chevron y una noticia crítica de ISA que bloquea 3 indicadores.",
+      "aiStatus": "suggestion"
+    }
+  },
+  "executiveSummary": {
+    "status": "ok",
+    "data": {
+      "total": 8,
+      "active": 6,
+      "published": 3,
+      "inProgress": 2,
+      "avgCoveragePct": 82
+    }
+  },
+  "enabledAnalyses": {
+    "status": "ok",
+    "data": [
+      {
+        "id": "ana_01J9Y8C3N6",
+        "title": "Informe de referenciamiento de pares",
+        "status": "published",
+        "description": "Seguimiento trimestral de Ecopetrol vs. 14 compañías del sector.",
+        "updatedAt": "2026-09-22T14:05:00-05:00",
+        "ownerName": "Alejandra",
+        "targetRoute": "/analisis/ana_01J9Y8C3N6/visualizacion"
+      },
+      {
+        "id": "ana_01J9Y8F7K3",
+        "title": "Referentes estratégicos",
+        "status": "in_review",
+        "description": "TBG e ILP frente a pares del sector energético.",
+        "updatedAt": "2026-09-25T09:30:00-05:00",
+        "ownerName": "Andrea",
+        "targetRoute": "/analisis/ana_01J9Y8F7K3/resultados"
+      },
+      {
+        "id": "ana_01J9Y8G2M5",
+        "title": "Monitor de Valor",
+        "status": "draft",
+        "description": "Drivers financieros y sensibilidades de generación de valor.",
+        "updatedAt": "2026-09-18T11:20:00-05:00",
+        "ownerName": "Mauricio",
+        "targetRoute": "/analisis/ana_01J9Y8G2M5/definicion"
+      },
+      {
+        "id": "ana_01J9Y8H6P8",
+        "title": "Comparativo sectorial oil & gas",
+        "status": "published",
+        "description": "Rentabilidad y solvencia frente a majors internacionales.",
+        "updatedAt": "2026-09-20T16:45:00-05:00",
+        "ownerName": "Camila",
+        "targetRoute": "/analisis/ana_01J9Y8H6P8/visualizacion"
+      }
+    ]
+  },
+  "peerNews": {
+    "status": "ok",
+    "data": [
+      {
+        "id": "nws_01J9Y9A1B2",
+        "companyId": "cmp_shell",
+        "companyName": "Shell",
+        "colorKey": "shell",
+        "initials": "SH",
+        "impact": "up",
+        "headline": "Reporta mejora de margen EBITDA sectorial.",
+        "source": "Bloomberg"
+      },
+      {
+        "id": "nws_01J9Y9A3C4",
+        "companyId": "cmp_chevron",
+        "companyName": "Chevron",
+        "colorKey": "chevron",
+        "initials": "CH",
+        "impact": "up",
+        "headline": "Producción récord en el Pérmico impulsa el flujo de caja.",
+        "source": "Reuters"
+      },
+      {
+        "id": "nws_01J9Y9A5D6",
+        "companyId": "cmp_equinor",
+        "companyName": "Equinor",
+        "colorKey": "equinor",
+        "initials": "EQ",
+        "impact": "down",
+        "headline": "Reduce reservas probadas tras revisión técnica en el Mar del Norte.",
+        "source": "Bloomberg"
+      },
+      {
+        "id": "nws_01J9Y9A7E8",
+        "companyId": "cmp_bp",
+        "companyName": "BP",
+        "colorKey": "bp",
+        "initials": "BP",
+        "impact": "up",
+        "headline": "Anuncia recompra de acciones tras resultados sobre lo esperado.",
+        "source": "Platts"
+      },
+      {
+        "id": "nws_01J9Y9A9F0",
+        "companyId": "cmp_isa",
+        "companyName": "ISA",
+        "colorKey": "isa",
+        "initials": "IS",
+        "impact": "up",
+        "headline": "Firma nuevos contratos de transmisión en Brasil por USD 400M.",
+        "source": "Valor Económico"
+      }
+    ]
+  },
+  "marketIndicators": {
+    "status": "ok",
+    "data": [
+      {
+        "id": "brent",
+        "label": "Brent",
+        "value": 71.4,
+        "unit": "usd_b",
+        "deltaPct": 0.6,
+        "trend": "up"
+      },
+      {
+        "id": "wti",
+        "label": "WTI",
+        "value": 67.8,
+        "unit": "usd_b",
+        "deltaPct": -0.3,
+        "trend": "down"
+      },
+      {
+        "id": "trm",
+        "label": "TRM",
+        "value": 4102,
+        "unit": "cop_per_usd",
+        "deltaPct": 0.2,
+        "trend": "up"
+      },
+      {
+        "id": "market_cap_ecp",
+        "label": "Market Cap ECP",
+        "value": 46.1,
+        "unit": "usd_bn",
+        "deltaPct": 1.1,
+        "trend": "up"
+      },
+      {
+        "id": "share_price_ecp",
+        "label": "Precio acción",
+        "value": 1935,
+        "unit": "cop",
+        "deltaPct": 0.9,
+        "trend": "up"
+      }
+    ]
+  },
+  "permissions": {
+    "canViewAnalysisList": true
+  }
+}

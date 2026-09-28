@@ -1,0 +1,9 @@
+{
+  "location": "/login?error=access_denied&returnTo=%2Finicio",
+  "loginErrorCodes": [
+    "access_denied",
+    "session_expired",
+    "idp_error",
+    "unknown"
+  ]
+}

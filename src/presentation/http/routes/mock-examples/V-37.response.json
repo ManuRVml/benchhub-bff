@@ -1,0 +1,90 @@
+{
+  "indicators": [
+    {
+      "id": "ind_roace",
+      "label": "ROACE",
+      "isReady": true
+    },
+    {
+      "id": "ind_margen_ebitda",
+      "label": "Margen EBITDA",
+      "isReady": false
+    },
+    {
+      "id": "ind_deuda_bruta_ebitda",
+      "label": "Deuda Bruta / EBITDA",
+      "isReady": false
+    }
+  ],
+  "formula": {
+    "expression": "ROACE = NOPAT / Capital empleado",
+    "terms": [
+      "NOPAT = Ingresos operacionales − Costos y gastos operativos − Depreciación y amortización − Impuesto de renta",
+      "Capital empleado = Activos totales − Pasivos corrientes"
+    ]
+  },
+  "levers": [
+    {
+      "id": "lev_energy_cost",
+      "label": "Costo de energía eléctrica",
+      "unit": "percent",
+      "min": -10,
+      "max": 5,
+      "step": 1,
+      "default": 0,
+      "linked": {
+        "label": "Eficiencia energética (recalculada)",
+        "unit": "percent",
+        "factor": -0.6
+      }
+    },
+    {
+      "id": "lev_contracted_services",
+      "label": "Servicios contratados",
+      "unit": "mmcop",
+      "min": -10000,
+      "max": 5000,
+      "step": 500,
+      "default": 0
+    },
+    {
+      "id": "lev_production_volume",
+      "label": "Volumen de producción",
+      "unit": "percent",
+      "min": -5,
+      "max": 8,
+      "step": 1,
+      "default": 0,
+      "linked": {
+        "label": "Costo de levantamiento (recalculado)",
+        "unit": "percent",
+        "factor": 0.4
+      }
+    }
+  ],
+  "base": {
+    "value": 7.4,
+    "unit": "percent"
+  },
+  "target": {
+    "value": 7.9,
+    "unit": "percent"
+  },
+  "suggestion": {
+    "id": "sug_roace_mix_1",
+    "levers": {
+      "lev_energy_cost": -5,
+      "lev_contracted_services": -5000,
+      "lev_production_volume": 3
+    },
+    "estimatedResult": 8.1,
+    "status": "requires_validation",
+    "validatedBy": null,
+    "validatedAt": null
+  },
+  "permissions": {
+    "canSimulate": true,
+    "canValidateSuggestion": true,
+    "canSaveSimulation": true
+  }
+}

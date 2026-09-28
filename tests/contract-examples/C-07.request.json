@@ -1,0 +1,8 @@
+{
+  "weights": [
+    {
+      "indicatorId": "branded-id",
+      "weight": 15
+    }
+  ]
+}

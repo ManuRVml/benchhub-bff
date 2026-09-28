@@ -1,0 +1,14 @@
+{
+  "proactiveTip": {
+    "id": "tip_inicio_2026-09-25",
+    "text": "Hola, soy Yarbis. Detecté 3 cambios relevantes en el sector durante las últimas 24 horas — pregúntame por cualquier cifra, indicador o compañía.",
+    "aiStatus": "suggestion"
+  },
+  "suggestions": [
+    "¿Qué análisis tengo pending?",
+    "¿Cómo está Ecopetrol vs. pares?"
+  ],
+  "permissions": {
+    "canUseAssistant": true
+  }
+}

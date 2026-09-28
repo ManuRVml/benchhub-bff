@@ -1,0 +1,7 @@
+{
+  "kind": "report-summary-xlsx|value-monitor-pdf|presentation-pptx|presentation-pdf|strategic-plan|radar-png",
+  "params": {
+    "analysisId": "branded-id",
+    "format": "optional-format-specific-options"
+  }
+}

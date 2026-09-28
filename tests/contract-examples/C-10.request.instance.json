@@ -1,0 +1,6 @@
+{
+  "entityType": "indicator",
+  "entityId": "ind_margen_ebitda",
+  "text": "El margen EBITDA de Shell no coincide con el reporte 2T-2026.",
+  "parentId": "cmt_01JA2KG0AA"
+}

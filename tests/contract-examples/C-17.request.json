@@ -1,0 +1,13 @@
+{
+  "config": {
+    "visibleIndicators": [
+      "branded-id",
+      "branded-id"
+    ],
+    "thresholds": {
+      "alert": 70,
+      "warning": 85
+    },
+    "period": "quarter|year"
+  }
+}

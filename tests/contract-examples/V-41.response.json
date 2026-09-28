@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "",
+    "date": null,
+    "language": "es",
+    "templateId": null
+  },
+  "templates": [
+    {
+      "id": "directorio",
+      "name": "Directorio Ejecutivo",
+      "description": "Mensajes clave, semáforos y ranking. Máximo 6 diapositivas.",
+      "accentKey": "template.directorio"
+    },
+    {
+      "id": "storytelling",
+      "name": "Storytelling de Mercado",
+      "description": "Narrativa de industria con contexto e IA generativa.",
+      "accentKey": "template.storytelling"
+    },
+    {
+      "id": "analitico",
+      "name": "Detalle Analítico",
+      "description": "Tablas completas, drill-down y anexos por categoría.",
+      "accentKey": "template.detalleAnalitico"
+    }
+  ],
+  "includeCover": true,
+  "includeClosing": true,
+  "modules": [
+    {
+      "id": "hom",
+      "label": "Detalle y edición de datos por compañía",
+      "charts": [
+        {
+          "id": "cards",
+          "label": "Tarjetas de cobertura",
+          "isSelected": false
+        },
+        {
+          "id": "faltantes",
+          "label": "Indicadores faltantes",
+          "isSelected": false
+        }
+      ]
+    },
+    {
+      "id": "comp",
+      "label": "Comparativo GE vs. Promedio Pares",
+      "charts": [
+        {
+          "id": "barras",
+          "label": "Barras GE vs. pares",
+          "isSelected": true
+        },
+        {
+          "id": "tabla",
+          "label": "Tabla de indicadores",
+          "isSelected": false
+        },
+        {
+          "id": "cat_rentabilidad",
+          "label": "Por indicador · Rentabilidad",
+          "isSelected": false
+        }
+      ]
+    },
+    {
+      "id": "hallazgos",
+      "label": "Hallazgos de IA",
+      "charts": [
+        {
+          "id": "lista",
+          "label": "Lista de hallazgos",
+          "isSelected": true
+        }
+      ]
+    }
+  ],
+  "slideCount": 7,
+  "notes": {
+    "comp|barras": "Destacar que GE supera al promedio en margen EBITDA pese a la caída del Brent."
+  },
+  "pendingNoteCount": 4,
+  "uploadedVersion": null,
+  "commentCount": 1,
+  "permissions": {
+    "canEdit": true,
+    "canPublish": true,
+    "canUpload": true,
+    "canDraftWithAssistant": true
+  }
+}

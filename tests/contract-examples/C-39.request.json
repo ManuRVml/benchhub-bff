@@ -1,0 +1,9 @@
+{
+  "name": "updated-name",
+  "description": "optional-updated-description",
+  "companyIds": [
+    "branded-id",
+    "branded-id"
+  ],
+  "isDefault": true
+}

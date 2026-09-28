@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "title": "",
+    "date": null,
+    "language": "es",
+    "templateId": null
+  },
+  "templates": [
+    {
+      "id": "directorio",
+      "name": "Directorio Ejecutivo",
+      "description": "Mensajes clave, semáforos y ranking. Máximo 6 diapositivas.",
+      "accentKey": "template.directorio"
+    },
+    {
+      "id": "storytelling",
+      "name": "Storytelling de Mercado",
+      "description": "Narrativa de industria con contexto e IA generativa.",
+      "accentKey": "template.storytelling"
+    },
+    {
+      "id": "analitico",
+      "name": "Detalle Analítico",
+      "description": "Tablas completas, drill-down y anexos por categoría.",
+      "accentKey": "template.detalleAnalitico"
+    }
+  ],
+  "includeCover": true,
+  "includeClosing": true,
+  "modules": [
+    {
+      "id": "hom",
+      "label": "Detalle y edición de datos por compañía",
+      "charts": [
+        {
+          "id": "cards",
+          "label": "Tarjetas de cobertura",
+          "isSelected": false
+        },
+        {
+          "id": "faltantes",
+          "label": "Indicadores faltantes",
+          "isSelected": false
+        }
+      ]
+    },
+    {
+      "id": "comp",
+      "label": "Comparativo GE vs. Promedio Pares",
+      "charts": [
+        {
+          "id": "barras",
+          "label": "Barras GE vs. pares",
+          "isSelected": true
+        },
+        {
+          "id": "tabla",
+          "label": "Tabla de indicadores",
+          "isSelected": false
+        },
+        {
+          "id": "cat_rentabilidad",
+          "label": "Por indicador · Rentabilidad",
+          "isSelected": false
+        },
+        {
+          "id": "cat_liquidez",
+          "label": "Por indicador · Liquidez",
+          "isSelected": false
+        },
+        {
+          "id": "cat_operacional",
+          "label": "Por indicador · Operacional",
+          "isSelected": false
+        },
+        {
+          "id": "cat_opex",
+          "label": "Por indicador · Competitividad OPEX",
+          "isSelected": false
+        },
+        {
+          "id": "cat_solvencia",
+          "label": "Por indicador · Solvencia",
+          "isSelected": false
+        },
+        {
+          "id": "cat_esg",
+          "label": "Por indicador · ESG",
+          "isSelected": false
+        }
+      ]
+    },
+    {
+      "id": "pvc",
+      "label": "Comparativo GE vs. compañía",
+      "charts": [
+        {
+          "id": "Chevron",
+          "label": "Chevron",
+          "isSelected": false
+        },
+        {
+          "id": "Shell",
+          "label": "Shell",
+          "isSelected": false
+        },
+        {
+          "id": "Equinor",
+          "label": "Equinor",
+          "isSelected": false
+        },
+        {
+          "id": "BP",
+          "label": "BP",
+          "isSelected": false
+        },
+        {
+          "id": "ISA",
+          "label": "ISA",
+          "isSelected": false
+        }
+      ]
+    },
+    {
+      "id": "resumen",
+      "label": "Resumen del informe",
+      "charts": [
+        {
+          "id": "tabla",
+          "label": "Tabla resumen",
+          "isSelected": false
+        }
+      ]
+    },
+    {
+      "id": "panorama",
+      "label": "Panorama comparativo de promedios",
+      "charts": [
+        {
+          "id": "kpis",
+          "label": "KPIs resumen",
+          "isSelected": true
+        },
+        {
+          "id": "heatmap",
+          "label": "Heatmap",
+          "isSelected": true
+        },
+        {
+          "id": "ranking",
+          "label": "Ranking por categoría",
+          "isSelected": false
+        },
+        {
+          "id": "radar",
+          "label": "Radar GE vs. sector",
+          "isSelected": false
+        }
+      ]
+    },
+    {
+      "id": "peso",
+      "label": "Composición de peso por línea de indicador",
+      "charts": [
+        {
+          "id": "barras",
+          "label": "Barras apiladas",
+          "isSelected": true
+        }
+      ]
+    },
+    {
+      "id": "hallazgos",
+      "label": "Hallazgos de IA",
+      "charts": [
+        {
+          "id": "lista",
+          "label": "Lista de hallazgos",
+          "isSelected": true
+        }
+      ]
+    }
+  ],
+  "slideCount": 7,
+  "notes": {
+    "comp|barras": "Destacar que GE supera al promedio en margen EBITDA pese a la caída del Brent."
+  },
+  "pendingNoteCount": 4,
+  "uploadedVersion": null,
+  "commentCount": 2,
+  "permissions": {
+    "canEdit": true,
+    "canPublish": true,
+    "canUpload": true,
+    "canDraftWithAssistant": true
+  }
+}

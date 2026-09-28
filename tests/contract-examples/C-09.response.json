@@ -1,0 +1,11 @@
+{
+  "publicationManifest": {
+    "id": "branded-id",
+    "status": "published",
+    "createdAt": "2025-10-03T10:00:00Z",
+    "products": [
+      "report",
+      "presentation"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "overrides": [
+    {
+      "companyId": "branded-id",
+      "indicatorId": "branded-id",
+      "value": "number|null",
+      "isEstimate": true,
+      "justification": "optional-string"
+    }
+  ]
+}

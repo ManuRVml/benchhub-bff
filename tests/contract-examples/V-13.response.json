@@ -1,0 +1,42 @@
+{
+  "categoryOptions": [
+    {
+      "id": "rentabilidad",
+      "label": "Rentabilidad"
+    },
+    {
+      "id": "solvencia",
+      "label": "Solvencia"
+    }
+  ],
+  "rows": [
+    {
+      "category": {
+        "id": "rentabilidad",
+        "label": "Rentabilidad",
+        "tier": 2
+      },
+      "indicatorId": "ind_roace",
+      "label": "ROACE (%)",
+      "unit": "percent",
+      "geValue": 7.4,
+      "peerAvg": 5.5
+    },
+    {
+      "category": {
+        "id": "solvencia",
+        "label": "Solvencia",
+        "tier": 4
+      },
+      "indicatorId": "ind_deuda_ebitda",
+      "label": "Deuda Neta/EBITDA (x)",
+      "unit": "ratio_x",
+      "geValue": 2.4,
+      "peerAvg": 1.6
+    }
+  ],
+  "permissions": {
+    "canEditValues": true,
+    "canExport": true
+  }
+}

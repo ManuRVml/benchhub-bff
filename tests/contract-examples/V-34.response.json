@@ -1,0 +1,26 @@
+{
+  "source": "tbg",
+  "items": [
+    {
+      "indicatorId": "ind_tbg_flujo_caja_libre",
+      "label": "Flujo de Caja Libre",
+      "categoryLabel": "Financiero",
+      "isAlreadyIncluded": true
+    },
+    {
+      "indicatorId": "ind_tbg_deuda_bruta_ebitda",
+      "label": "Deuda Bruta / EBITDA",
+      "categoryLabel": "Financiero",
+      "isAlreadyIncluded": true
+    },
+    {
+      "indicatorId": "ind_tbg_dividendos_recibidos",
+      "label": "Dividendos Recibidos",
+      "categoryLabel": "Estratégico",
+      "isAlreadyIncluded": true
+    }
+  ],
+  "permissions": {
+    "canConfigure": true
+  }
+}

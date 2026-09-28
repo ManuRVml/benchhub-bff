@@ -1,0 +1,6 @@
+{
+  "analysisId": "branded-id",
+  "monitor": "optional-boolean-if-analysisId-absent",
+  "reason": "user-edited-values|external-data-update|manual-trigger",
+  "changeRequestId": "optional-branded-id"
+}

@@ -1,0 +1,57 @@
+{
+  "categories": [
+    {
+      "id": "rentabilidad",
+      "label": "Rentabilidad"
+    },
+    {
+      "id": "liquidez",
+      "label": "Liquidez"
+    },
+    {
+      "id": "operacional",
+      "label": "Operacional"
+    },
+    {
+      "id": "opex",
+      "label": "Competitividad OPEX"
+    },
+    {
+      "id": "solvencia",
+      "label": "Solvencia"
+    },
+    {
+      "id": "esg",
+      "label": "ESG"
+    }
+  ],
+  "category": "opex",
+  "rows": [
+    {
+      "indicatorId": "ind_costo_levant",
+      "label": "Costo de Levantamiento (USD/B)",
+      "unit": "usd_b",
+      "geValue": 12.2,
+      "peerAvg": 6.7,
+      "hasDetail": false
+    },
+    {
+      "indicatorId": "ind_costo_ventas",
+      "label": "Costo de ventas/BI (USD/B)",
+      "unit": "usd_b",
+      "geValue": 66.1,
+      "peerAvg": 130.7,
+      "hasDetail": false
+    }
+  ],
+  "peerAvgCompanies": [
+    "cmp_chevron",
+    "cmp_shell",
+    "cmp_equinor",
+    "cmp_bp",
+    "cmp_isa"
+  ],
+  "permissions": {
+    "canEditValues": true
+  }
+}

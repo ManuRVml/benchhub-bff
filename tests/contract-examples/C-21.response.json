@@ -1,0 +1,17 @@
+{
+  "base": {
+    "indicatorId": "branded-id",
+    "value": 100
+  },
+  "simulated": {
+    "value": 115
+  },
+  "target": 120,
+  "gap": 5,
+  "linked": [
+    {
+      "indicatorId": "branded-id",
+      "variation": 0.05
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "header": {
+    "analystName": "Camila Bravo",
+    "updatedLabel": "Abril 2026",
+    "status": "in_construction",
+    "selectedSnapshotId": "2026-04",
+    "snapshots": [
+      {
+        "id": "2026-04",
+        "label": "Abril 2026",
+        "note": "Corte vigente",
+        "isClosed": false
+      },
+      {
+        "id": "2026-01",
+        "label": "Enero 2026",
+        "note": "Cierre T4 2025",
+        "isClosed": true
+      }
+    ]
+  },
+  "kpis": {
+    "status": "ok",
+    "data": {
+      "globalPct": 96.15,
+      "retoPct": 78.56,
+      "atRiskCount": 1,
+      "tbdCount": 3
+    }
+  },
+  "dimensionWeights": {
+    "status": "ok",
+    "data": {
+      "fin": 45,
+      "op": 30,
+      "trans": 25
+    }
+  },
+  "permissions": {
+    "canEditTargets": true,
+    "canConfigure": true,
+    "canSaveView": true,
+    "canExport": true,
+    "canOpenSensitivities": true,
+    "canComment": true,
+    "canUseAssistant": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "id": "sv_01",
+      "name": "Financiero en riesgo · Abril 2026",
+      "createdAt": "2026-09-24T15:30:00-05:00",
+      "state": {
+        "corte": "2026-04",
+        "historico": "actual",
+        "categoria": [
+          "financiero"
+        ],
+        "cumplimiento": [
+          "risk"
+        ]
+      }
+    }
+  ],
+  "permissions": {
+    "canSaveView": true,
+    "canDeleteView": true
+  }
+}

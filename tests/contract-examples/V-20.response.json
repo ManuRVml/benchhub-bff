@@ -1,0 +1,160 @@
+{
+  "lifecycleState": "preview",
+  "position": {
+    "tierId": 2,
+    "periodLabel": {
+      "year": 2025,
+      "quarter": 4
+    },
+    "indicatorCount": 10,
+    "peerCount": 6
+  },
+  "kpiTiles": {
+    "status": "ok",
+    "data": [
+      {
+        "dimension": "fin",
+        "sectorAvg": 43,
+        "ecopetrol": 45,
+        "min": 33,
+        "max": 62
+      },
+      {
+        "dimension": "op",
+        "sectorAvg": 30,
+        "ecopetrol": 30,
+        "min": 15,
+        "max": 40
+      },
+      {
+        "dimension": "trans",
+        "sectorAvg": 28,
+        "ecopetrol": 25,
+        "min": 24,
+        "max": 33
+      }
+    ]
+  },
+  "heatmap": {
+    "status": "ok",
+    "data": [
+      {
+        "companyId": "cmp_ecopetrol",
+        "name": "Ecopetrol",
+        "isEcopetrol": true,
+        "fin": 45,
+        "op": 30,
+        "trans": 25
+      },
+      {
+        "companyId": "cmp_bp",
+        "name": "BP",
+        "isEcopetrol": false,
+        "fin": 55,
+        "op": 15,
+        "trans": 30
+      }
+    ]
+  },
+  "radar": {
+    "status": "ok",
+    "data": {
+      "axes": [
+        "fin",
+        "op",
+        "trans"
+      ],
+      "ecopetrol": [
+        45,
+        30,
+        25
+      ],
+      "sector": [
+        43,
+        30,
+        28
+      ]
+    }
+  },
+  "categories": {
+    "status": "ok",
+    "data": [
+      {
+        "id": "rentabilidad",
+        "label": "Rentabilidad",
+        "tierId": 2,
+        "message": "Ecopetrol mantiene margen sólido pese a la contracción."
+      },
+      {
+        "id": "solvencia",
+        "label": "Solvencia",
+        "tierId": 4,
+        "message": "Mayor reto por niveles de apalancamiento."
+      }
+    ]
+  },
+  "weightComposition": {
+    "status": "ok",
+    "data": {
+      "ecopetrol": {
+        "fin": 45,
+        "op": 30,
+        "trans": 25
+      },
+      "diffs": {
+        "fin": 2,
+        "op": 0,
+        "trans": -3
+      },
+      "companies": [
+        {
+          "companyId": "cmp_totalenergies",
+          "name": "TotalEnergies",
+          "fin": 62,
+          "op": 20,
+          "trans": 24,
+          "totalPct": 106,
+          "sumStatus": "over"
+        },
+        {
+          "companyId": "cmp_bp",
+          "name": "BP",
+          "fin": 55,
+          "op": 15,
+          "trans": 30,
+          "totalPct": 100,
+          "sumStatus": "ok"
+        }
+      ],
+      "groupAvg": {
+        "fin": 43,
+        "op": 30,
+        "trans": 28
+      },
+      "hasOverweight": true,
+      "lineLegend": [
+        {
+          "code": "LIN-01",
+          "dimension": "fin",
+          "formula": "Promedio ponderado de ROACE, Margen EBITDA y Deuda Neta/EBITDA"
+        },
+        {
+          "code": "LIN-02",
+          "dimension": "op",
+          "formula": "Promedio ponderado de crecimiento de producción y competitividad en OPEX"
+        },
+        {
+          "code": "LIN-03",
+          "dimension": "trans",
+          "formula": "Promedio ponderado de gobernanza corporativa y factores ESG"
+        }
+      ]
+    }
+  },
+  "permissions": {
+    "canPublish": true,
+    "canEnablePreview": true,
+    "canCreatePresentation": true,
+    "canComment": true
+  }
+}

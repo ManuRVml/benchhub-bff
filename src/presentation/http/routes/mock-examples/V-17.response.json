@@ -1,0 +1,164 @@
+{
+  "horizon": "union",
+  "summary": {
+    "kpis": {
+      "companies": 11,
+      "avgFinPct": 47,
+      "avgOpPct": 22,
+      "avgTransPct": 33
+    },
+    "composition": [
+      {
+        "companyId": "cmp_bp",
+        "name": "BP",
+        "finPct": 55,
+        "opPct": 15,
+        "transPct": 31,
+        "finOpPct": null,
+        "totalPct": 101,
+        "sumStatus": "over"
+      },
+      {
+        "companyId": "cmp_equinor",
+        "name": "Equinor",
+        "finPct": 34,
+        "opPct": 17,
+        "transPct": 34,
+        "finOpPct": 17,
+        "totalPct": 102,
+        "sumStatus": "over"
+      }
+    ],
+    "mainIndicators": [
+      {
+        "dimension": "fin",
+        "foci": [
+          {
+            "title": "Generación de caja",
+            "items": [
+              {
+                "companyId": "cmp_oxy",
+                "label": "Flujo de caja libre (FCL) antes de capital de trabajo",
+                "weightPct": 40
+              }
+            ],
+            "ecopetrolText": "Flujo de Caja Libre (10%)",
+            "ecopetrolStatus": "defined"
+          }
+        ]
+      },
+      {
+        "dimension": "op",
+        "foci": [
+          {
+            "title": null,
+            "items": [
+              {
+                "companyId": "cmp_isa",
+                "label": "Confiabilidad y Disponibilidad de la Red",
+                "weightPct": 20
+              }
+            ],
+            "ecopetrolText": null,
+            "ecopetrolStatus": "in_definition"
+          }
+        ]
+      }
+    ],
+    "topIndicators": null
+  },
+  "companyEditor": {
+    "companyId": "cmp_shell",
+    "groups": [
+      {
+        "dimension": "trans",
+        "totalPct": 25,
+        "items": [
+          {
+            "indicatorId": "ind_shell_ifsp",
+            "label": "IFSP N1 y N2",
+            "weightPct": 7.5,
+            "isHito": false,
+            "subItems": []
+          }
+        ]
+      }
+    ],
+    "totalPct": 100,
+    "sumStatus": "ok"
+  },
+  "union": {
+    "companyId": "cmp_shell",
+    "companyOptions": [
+      {
+        "id": "cmp_shell",
+        "name": "Shell",
+        "hasIlp": true
+      },
+      {
+        "id": "cmp_chevron",
+        "name": "Chevron",
+        "hasIlp": false
+      }
+    ],
+    "tbg": {
+      "dims": [
+        {
+          "dimension": "fin",
+          "totalPct": 35,
+          "items": [
+            {
+              "label": "Flujo de caja de actividades operativas",
+              "weightPct": 35,
+              "isHito": false,
+              "subItems": []
+            }
+          ]
+        }
+      ],
+      "totalPct": 100,
+      "indicatorCount": 9
+    },
+    "ilp": {
+      "dims": [
+        {
+          "dimension": "fin",
+          "totalPct": 75,
+          "items": [
+            {
+              "label": "Retorno Total al Accionista Relativo",
+              "weightPct": 25,
+              "isHito": false,
+              "subItems": []
+            }
+          ]
+        },
+        {
+          "dimension": "trans",
+          "totalPct": 25,
+          "items": [
+            {
+              "label": "Hito: Avance en la transición energética",
+              "weightPct": 25,
+              "isHito": true,
+              "subItems": [
+                "Intensidad de carbono",
+                "Reducción GEI 1 y 2",
+                "Crecimiento negocio de energía",
+                "Combustibles bio",
+                "Desarrollo sumidero de emisiones"
+              ]
+            }
+          ]
+        }
+      ],
+      "totalPct": 100,
+      "indicatorCount": 3,
+      "hitoCount": 1
+    }
+  },
+  "companyDetail": null,
+  "permissions": {
+    "canEditWeights": true
+  }
+}

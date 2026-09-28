@@ -1,0 +1,83 @@
+{
+  "warnings": [
+    {
+      "code": "results_2025_in_review",
+      "text": "⚠ Resultados 2025 en revisión"
+    },
+    {
+      "code": "targets_2026_in_construction",
+      "text": "⚠ Metas y seguimiento resultados 2026 en construcción"
+    }
+  ],
+  "rows": [
+    {
+      "kviId": "kvi_fcl",
+      "code": "KVI-FCL",
+      "category": "financiero",
+      "categoryLabel": "Financiero",
+      "label": "Flujo de Caja Libre",
+      "unit": "bcop",
+      "weightPct": 10,
+      "owner": "Diego Gómez",
+      "meta": 7.19,
+      "metaReto": 10.53,
+      "real": 10.69,
+      "resultPct": 149,
+      "retoPct": 102,
+      "resultBand": "ok",
+      "retoBand": "ok",
+      "isTbd": false,
+      "isTextMode": false,
+      "lowerIsBetter": false,
+      "isEditable": true
+    },
+    {
+      "kviId": "kvi_roacewacc",
+      "code": "KVI-ROACEWACC",
+      "category": "financiero",
+      "categoryLabel": "Financiero",
+      "label": "ROACE menos WACC",
+      "unit": "percent",
+      "weightPct": null,
+      "owner": "Liz Cardona",
+      "meta": null,
+      "metaReto": null,
+      "real": null,
+      "resultPct": null,
+      "retoPct": null,
+      "resultBand": "tbd",
+      "retoBand": "tbd",
+      "isTbd": true,
+      "isTextMode": false,
+      "lowerIsBetter": false,
+      "isEditable": false
+    },
+    {
+      "kviId": "kvi_riesgocred",
+      "code": "KVI-RIESGOCRED",
+      "category": "mercado",
+      "categoryLabel": "Mercado",
+      "label": "Calificación de Riesgo Crediticio",
+      "unit": "rating",
+      "weightPct": null,
+      "owner": "GMV",
+      "meta": null,
+      "metaReto": null,
+      "real": null,
+      "metaText": "BB",
+      "metaRetoText": "BB",
+      "realText": "BB",
+      "resultPct": 100,
+      "retoPct": 100,
+      "resultBand": "ok",
+      "retoBand": "ok",
+      "isTbd": false,
+      "isTextMode": true,
+      "lowerIsBetter": false,
+      "isEditable": false
+    }
+  ],
+  "permissions": {
+    "canEditTargets": true
+  }
+}

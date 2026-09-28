@@ -1,0 +1,18 @@
+# Build context for the Dockerfile: sources and manifests only.
+node_modules
+dist
+dist-contract
+coverage
+public
+.git
+.husky
+.wt
+tests
+docs
+tools
+contracts
+*.log
+.env
+.env.*
+!.env.example
+.p2-*-probe.mjs

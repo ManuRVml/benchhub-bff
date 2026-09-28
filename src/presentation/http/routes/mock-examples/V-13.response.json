@@ -1,0 +1,154 @@
+{
+  "categoryOptions": [
+    {
+      "id": "rentabilidad",
+      "label": "Rentabilidad"
+    },
+    {
+      "id": "liquidez",
+      "label": "Liquidez"
+    },
+    {
+      "id": "operacional",
+      "label": "Operacional"
+    },
+    {
+      "id": "opex",
+      "label": "Competitividad OPEX"
+    },
+    {
+      "id": "solvencia",
+      "label": "Solvencia"
+    },
+    {
+      "id": "esg",
+      "label": "ESG"
+    }
+  ],
+  "rows": [
+    {
+      "category": {
+        "id": "rentabilidad",
+        "label": "Rentabilidad",
+        "tier": 2
+      },
+      "indicatorId": "ind_roace",
+      "label": "ROACE (%)",
+      "unit": "percent",
+      "geValue": 7.4,
+      "peerAvg": 5.5
+    },
+    {
+      "category": {
+        "id": "rentabilidad",
+        "label": "Rentabilidad",
+        "tier": 2
+      },
+      "indicatorId": "ind_margen_ebitda",
+      "label": "Margen EBITDA (%)",
+      "unit": "percent",
+      "geValue": 39,
+      "peerAvg": 32
+    },
+    {
+      "category": {
+        "id": "rentabilidad",
+        "label": "Rentabilidad",
+        "tier": 2
+      },
+      "indicatorId": "ind_crec_ebitda",
+      "label": "Crecimiento EBITDA (%)",
+      "unit": "percent",
+      "geValue": -13.8,
+      "peerAvg": -2.2
+    },
+    {
+      "category": {
+        "id": "liquidez",
+        "label": "Liquidez",
+        "tier": 1
+      },
+      "indicatorId": "ind_prueba_acida",
+      "label": "Prueba ácida (x)",
+      "unit": "ratio_x",
+      "geValue": 1.3,
+      "peerAvg": 0.8
+    },
+    {
+      "category": {
+        "id": "liquidez",
+        "label": "Liquidez",
+        "tier": 1
+      },
+      "indicatorId": "ind_razon_corriente",
+      "label": "Razón corriente (x)",
+      "unit": "ratio_x",
+      "geValue": 1.5,
+      "peerAvg": 1.2
+    },
+    {
+      "category": {
+        "id": "operacional",
+        "label": "Operacional",
+        "tier": 3
+      },
+      "indicatorId": "ind_crec_produccion",
+      "label": "Crecimiento Producción (%)",
+      "unit": "percent",
+      "geValue": -0.1,
+      "peerAvg": 5.1
+    },
+    {
+      "category": {
+        "id": "opex",
+        "label": "Competitividad OPEX",
+        "tier": 1
+      },
+      "indicatorId": "ind_costo_levant",
+      "label": "Costo de Levantamiento (USD/B)",
+      "unit": "usd_b",
+      "geValue": 12.2,
+      "peerAvg": 6.7
+    },
+    {
+      "category": {
+        "id": "opex",
+        "label": "Competitividad OPEX",
+        "tier": 1
+      },
+      "indicatorId": "ind_costo_ventas",
+      "label": "Costo de ventas/BI (USD/B)",
+      "unit": "usd_b",
+      "geValue": 66.1,
+      "peerAvg": 130.7
+    },
+    {
+      "category": {
+        "id": "solvencia",
+        "label": "Solvencia",
+        "tier": 4
+      },
+      "indicatorId": "ind_deuda_ebitda",
+      "label": "Deuda Neta/EBITDA (x)",
+      "unit": "ratio_x",
+      "geValue": 2.4,
+      "peerAvg": 1.6
+    },
+    {
+      "category": {
+        "id": "esg",
+        "label": "ESG",
+        "tier": 2
+      },
+      "indicatorId": "ind_gobernanza",
+      "label": "Gobernanza (puntos)",
+      "unit": "points",
+      "geValue": 78,
+      "peerAvg": 70
+    }
+  ],
+  "permissions": {
+    "canEditValues": true,
+    "canExport": true
+  }
+}

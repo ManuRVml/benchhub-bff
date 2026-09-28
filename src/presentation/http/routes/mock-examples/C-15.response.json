@@ -1,0 +1,13 @@
+{
+  "sections": [
+    {
+      "title": "section-title",
+      "text": "generated-content"
+    }
+  ],
+  "status": "suggestion",
+  "generatedBy": {
+    "model": "mock-llm",
+    "version": "1"
+  }
+}

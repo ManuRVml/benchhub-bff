@@ -1,0 +1,161 @@
+{
+  "templateId": "directorio",
+  "templateName": "Directorio Ejecutivo",
+  "accentKey": "template.directorio",
+  "language": "es",
+  "slides": [
+    {
+      "key": "title",
+      "kind": "title",
+      "label": "Portada",
+      "moduleLabel": "Portada",
+      "pageLabel": "1 / 13",
+      "subtitle": "Referenciamiento competitivo · T4 2025"
+    },
+    {
+      "key": "comp|barras",
+      "kind": "bars",
+      "label": "Barras GE vs. pares",
+      "moduleLabel": "Comparativo GE vs. Promedio Pares",
+      "pageLabel": "2 / 13",
+      "note": "Destacar que GE supera al promedio en margen EBITDA pese a la caída del Brent.",
+      "title": "GE vs. Promedio Pares",
+      "maxAbs": 39,
+      "rows": [
+        { "indicatorLabel": "ROACE (%)", "ecopetrolValue": 7.4, "peerAverageValue": 5.5, "unit": "percent" },
+        { "indicatorLabel": "Margen EBITDA (%)", "ecopetrolValue": 39, "peerAverageValue": 32, "unit": "percent" },
+        { "indicatorLabel": "Deuda neta / EBITDA (x)", "ecopetrolValue": 1.9, "peerAverageValue": 1.2, "unit": "ratio_x" },
+        { "indicatorLabel": "Crecimiento de producción (%)", "ecopetrolValue": -2.1, "peerAverageValue": 3.4, "unit": "percent" }
+      ]
+    },
+    {
+      "key": "comp|tabla",
+      "kind": "table",
+      "label": "Tabla de indicadores",
+      "moduleLabel": "Comparativo GE vs. Promedio Pares",
+      "pageLabel": "3 / 13",
+      "title": "Indicadores por categoría",
+      "rows": [
+        { "categoryLabel": "Rentabilidad", "indicatorLabel": "ROACE (%)", "ecopetrolValue": 7.4, "peerAverageValue": 5.5, "unit": "percent" },
+        { "categoryLabel": "Liquidez", "indicatorLabel": "Razón corriente (x)", "ecopetrolValue": 1.3, "peerAverageValue": 1.1, "unit": "ratio_x" }
+      ]
+    },
+    {
+      "key": "pvc|shell",
+      "kind": "pvc",
+      "label": "Shell",
+      "moduleLabel": "Comparativo GE vs. compañía",
+      "pageLabel": "4 / 13",
+      "companyName": "Shell",
+      "companyColorKey": "shell",
+      "title": "GE vs. Shell",
+      "rows": [
+        { "indicatorLabel": "ROACE (%)", "ecopetrolValue": 7.4, "companyValue": 11.2, "unit": "percent", "maxAbs": 11.2 },
+        { "indicatorLabel": "Margen EBITDA (%)", "ecopetrolValue": 39, "companyValue": 21.8, "unit": "percent", "maxAbs": 39 }
+      ]
+    },
+    {
+      "key": "hom|cards",
+      "kind": "hom",
+      "label": "Tarjetas de cobertura",
+      "moduleLabel": "Detalle y edición de datos por compañía",
+      "pageLabel": "5 / 13",
+      "cards": [
+        { "companyName": "Chevron", "coveragePct": 96, "tone": "complete", "missingCount": 1 },
+        { "companyName": "Shell", "coveragePct": 88, "tone": "review", "missingCount": 3 },
+        { "companyName": "ISA", "coveragePct": 52, "tone": "incomplete", "missingCount": 12 }
+      ]
+    },
+    {
+      "key": "hom|faltantes",
+      "kind": "homMissing",
+      "label": "Indicadores faltantes",
+      "moduleLabel": "Detalle y edición de datos por compañía",
+      "pageLabel": "6 / 13",
+      "rows": [
+        { "companyName": "ISA", "missingCount": 12, "coveragePct": 52 },
+        { "companyName": "Shell", "missingCount": 3, "coveragePct": 88 }
+      ]
+    },
+    {
+      "key": "panorama|radar",
+      "kind": "radar",
+      "label": "Radar de pesos",
+      "moduleLabel": "Panorama comparativo de promedios",
+      "pageLabel": "7 / 13",
+      "rows": [
+        { "dimensionLabel": "Financiera", "ecopetrolWeightPct": 45, "peerAverageWeightPct": 52 },
+        { "dimensionLabel": "Operativa", "ecopetrolWeightPct": 30, "peerAverageWeightPct": 28 },
+        { "dimensionLabel": "Transversal", "ecopetrolWeightPct": 25, "peerAverageWeightPct": 20 }
+      ]
+    },
+    {
+      "key": "panorama|kpis",
+      "kind": "summary",
+      "label": "KPIs resumen",
+      "moduleLabel": "Panorama comparativo de promedios",
+      "pageLabel": "8 / 13",
+      "ecopetrolWeightPct": { "financiera": 45, "operativa": 30, "transversal": 25 },
+      "summaryText": "El grupo Ecopetrol mantiene margen EBITDA superior al promedio de pares a pesar de la caída general del sector."
+    },
+    {
+      "key": "panorama|ranking",
+      "kind": "ranking",
+      "label": "Ranking",
+      "moduleLabel": "Panorama comparativo de promedios",
+      "pageLabel": "9 / 13",
+      "rows": [
+        { "rank": 1, "companyName": "TotalEnergies", "totalWeightPct": 106, "isEcopetrol": false, "barPct": 100 },
+        { "rank": 2, "companyName": "Ecopetrol", "totalWeightPct": 100, "isEcopetrol": true, "barPct": 94.3 },
+        { "rank": 3, "companyName": "Shell", "totalWeightPct": 95, "isEcopetrol": false, "barPct": 89.6 },
+        { "rank": 4, "companyName": "Chevron", "totalWeightPct": 90, "isEcopetrol": false, "barPct": 84.9 }
+      ]
+    },
+    {
+      "key": "panorama|heatmap",
+      "kind": "categories",
+      "label": "Heatmap",
+      "moduleLabel": "Panorama comparativo de promedios",
+      "pageLabel": "10 / 13",
+      "rows": [
+        { "companyName": "Ecopetrol", "financieraPct": 45, "operativaPct": 30, "transversalPct": 25, "isEcopetrol": true },
+        { "companyName": "TotalEnergies", "financieraPct": 62, "operativaPct": 20, "transversalPct": 24, "isEcopetrol": false },
+        { "companyName": "Shell", "financieraPct": 50, "operativaPct": 25, "transversalPct": 20, "isEcopetrol": false }
+      ]
+    },
+    {
+      "key": "peso|tabla",
+      "kind": "findings",
+      "label": "Peso por dimensión",
+      "moduleLabel": "Peso en TBG por dimensión",
+      "pageLabel": "11 / 13",
+      "rows": [
+        { "companyName": "TotalEnergies", "financieraPct": 62, "operativaPct": 20, "transversalPct": 24, "totalPct": 106 },
+        { "companyName": "Chevron", "financieraPct": 55, "operativaPct": 25, "transversalPct": 10, "totalPct": 90 }
+      ]
+    },
+    {
+      "key": "hallazgos|lista",
+      "kind": "hallazgos",
+      "label": "Lista de hallazgos",
+      "moduleLabel": "Hallazgos de IA",
+      "pageLabel": "12 / 13",
+      "findings": [
+        { "text": "GE supera al promedio de pares en margen EBITDA por 7 puntos." },
+        { "text": "La cobertura de datos de ISA está por debajo del umbral de 60 %." }
+      ],
+      "status": "suggestion"
+    },
+    {
+      "key": "appendix",
+      "kind": "appendix",
+      "label": "Cierre",
+      "moduleLabel": "Cierre",
+      "pageLabel": "13 / 13",
+      "supportEmail": "analisis.competitivo@ecopetrol.com.co"
+    }
+  ],
+  "permissions": {
+    "canReorder": true
+  }
+}

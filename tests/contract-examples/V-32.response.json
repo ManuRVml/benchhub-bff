@@ -1,0 +1,49 @@
+{
+  "cutOffDate": "2025-12-31",
+  "rangeFrom": 2023,
+  "rangeTo": 2025,
+  "thresholds": {
+    "alert": 70,
+    "warning": 90
+  },
+  "period": "quarter",
+  "sources": [
+    {
+      "id": "capital_iq",
+      "label": "Capital IQ",
+      "isEnabled": true
+    },
+    {
+      "id": "bloomberg",
+      "label": "Bloomberg",
+      "isEnabled": true
+    },
+    {
+      "id": "platts",
+      "label": "Platts",
+      "isEnabled": false
+    },
+    {
+      "id": "interna_ecp",
+      "label": "Fuentes internas Ecopetrol",
+      "isEnabled": true
+    }
+  ],
+  "kvis": [
+    {
+      "id": "kvi_fcl",
+      "label": "Flujo de Caja Libre",
+      "isIncluded": true
+    },
+    {
+      "id": "kvi_pib",
+      "label": "Aporte al PIB",
+      "isIncluded": true
+    }
+  ],
+  "exceptionsText": "",
+  "assistantContext": "",
+  "permissions": {
+    "canConfigure": true
+  }
+}

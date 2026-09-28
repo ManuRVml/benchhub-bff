@@ -1,0 +1,7 @@
+{
+  "error": {
+    "code": "CSRF_INVALID",
+    "messageKey": "auth.error.csrfInvalid",
+    "traceId": "01J9ZK4B2C7M5P8Q1S3VWX6Y9Z"
+  }
+}

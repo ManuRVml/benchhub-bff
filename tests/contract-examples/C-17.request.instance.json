@@ -1,0 +1,13 @@
+{
+  "config": {
+    "visibleIndicators": [
+      "ind_roace",
+      "ind_margen_ebitda"
+    ],
+    "thresholds": {
+      "alert": 70,
+      "warning": 85
+    },
+    "period": "quarter"
+  }
+}

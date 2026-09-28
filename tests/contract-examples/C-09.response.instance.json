@@ -1,0 +1,11 @@
+{
+  "publicationManifest": {
+    "id": "pub_01JA2KF4HS",
+    "status": "published",
+    "createdAt": "2026-09-25T10:00:00-05:00",
+    "products": [
+      "report",
+      "presentation"
+    ]
+  }
+}

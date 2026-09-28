@@ -1,0 +1,64 @@
+{
+  "tiles": {
+    "ecopetrolProductionKbped": 855,
+    "totalRank": 9,
+    "of": 10,
+    "lowEmissionsSharePct": {
+      "ecopetrol": 11,
+      "peers": 9
+    }
+  },
+  "segments": [
+    {
+      "id": "crude",
+      "labelKey": "aspiration.segment.crude",
+      "colorKey": "aspiration.crude"
+    },
+    {
+      "id": "gas",
+      "labelKey": "aspiration.segment.gas",
+      "colorKey": "aspiration.gas"
+    },
+    {
+      "id": "unconventional",
+      "labelKey": "aspiration.segment.unconventional",
+      "colorKey": "aspiration.unconventional"
+    },
+    {
+      "id": "lowEmissions",
+      "labelKey": "aspiration.segment.lowEmissions",
+      "colorKey": "aspiration.lowEmissions"
+    }
+  ],
+  "segment": "total",
+  "rows": [
+    {
+      "rank": 1,
+      "companyId": "cmp_exxon",
+      "name": "Exxon",
+      "isEcopetrol": false,
+      "segments": {
+        "crude": 2400,
+        "gas": 1300,
+        "unconventional": 800,
+        "lowEmissions": 250
+      },
+      "total": 4750
+    },
+    {
+      "rank": 9,
+      "companyId": "cmp_ecopetrol",
+      "name": "Ecopetrol",
+      "isEcopetrol": true,
+      "segments": {
+        "crude": 450,
+        "gas": 220,
+        "unconventional": 90,
+        "lowEmissions": 95
+      },
+      "total": 855
+    }
+  ],
+  "footnoteKey": "aspiration.footnote",
+  "permissions": {}
+}

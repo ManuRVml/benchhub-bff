@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "id": "ana_01J9Y8D4T2",
+      "name": "Desempeño comparativo — 4T 2025",
+      "description": "Referenciamiento competitivo trimestral de Ecopetrol frente a pares del sector energético en solvencia, rentabilidad, liquidez, OPEX y crecimiento.",
+      "createdOn": "2025-10-03",
+      "createdBy": {
+        "id": "usr_01J9Y7C2QK",
+        "fullName": "Camila Bravo"
+      },
+      "status": "in_review",
+      "canOpenResults": true
+    }
+  ],
+  "page": 1,
+  "pageSize": 20,
+  "totalItems": 3,
+  "filterOptions": {
+    "createdOn": [
+      "2025-10-03",
+      "2025-01-14",
+      "2025-08-22"
+    ],
+    "createdBy": [
+      {
+        "id": "usr_01J9Y7C2QK",
+        "fullName": "Camila Bravo"
+      },
+      {
+        "id": "usr_01J9Y7C9JS",
+        "fullName": "Jorge Salas"
+      }
+    ],
+    "status": [
+      "in_review",
+      "published",
+      "draft"
+    ]
+  },
+  "permissions": {
+    "canCreate": true
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "categories": [
+    {
+      "id": "rentabilidad",
+      "label": "Rentabilidad"
+    },
+    {
+      "id": "liquidez",
+      "label": "Liquidez"
+    }
+  ],
+  "category": "rentabilidad",
+  "rows": [
+    {
+      "indicatorId": "ind_roace",
+      "label": "ROACE (%)",
+      "unit": "percent",
+      "geValue": 7.4,
+      "peerAvg": 5.5,
+      "hasDetail": true
+    },
+    {
+      "indicatorId": "ind_crec_ebitda",
+      "label": "Crecimiento EBITDA (%)",
+      "unit": "percent",
+      "geValue": -13.8,
+      "peerAvg": -2.2,
+      "hasDetail": false
+    }
+  ],
+  "peerAvgCompanies": [
+    "cmp_chevron",
+    "cmp_shell",
+    "cmp_equinor",
+    "cmp_bp",
+    "cmp_isa"
+  ],
+  "permissions": {
+    "canEditValues": true
+  }
+}

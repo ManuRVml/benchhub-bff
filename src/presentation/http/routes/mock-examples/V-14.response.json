@@ -1,0 +1,18 @@
+{
+  "findings": [
+    {
+      "id": "fnd_margen_ebitda",
+      "text": "El grupo Ecopetrol mantiene margen EBITDA superior al promedio de pares a pesar de la caída general del sector."
+    },
+    {
+      "id": "fnd_isa_manual",
+      "text": "3 indicadores dependen de la actualización manual de ISA — riesgo para el cierre del informe."
+    }
+  ],
+  "status": "suggestion",
+  "generatedBy": {
+    "model": "mock-findings",
+    "version": "1"
+  },
+  "permissions": {}
+}

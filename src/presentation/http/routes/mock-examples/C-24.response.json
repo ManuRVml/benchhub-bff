@@ -1,0 +1,16 @@
+{
+  "mode": "weights",
+  "score": 85,
+  "variation": 5,
+  "categories": {
+    "productivity": {
+      "before": 70,
+      "after": 75
+    },
+    "operating_costs": {
+      "before": 65,
+      "after": 68
+    }
+  },
+  "status": "calculated"
+}

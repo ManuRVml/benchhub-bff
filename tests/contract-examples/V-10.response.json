@@ -1,0 +1,90 @@
+{
+  "kpis": {
+    "status": "ok",
+    "data": {
+      "companies": 5,
+      "complete": 2,
+      "incomplete": 1,
+      "pendingIndicators": 7
+    }
+  },
+  "insights": {
+    "status": "ok",
+    "data": [
+      {
+        "id": "ins_complete_share",
+        "text": "2 de 5 compañías tienen 90% o más de información completa."
+      },
+      {
+        "id": "ins_top_missing",
+        "text": "ISA concentra el mayor número de datos faltantes (3)."
+      }
+    ]
+  },
+  "companies": {
+    "status": "ok",
+    "data": {
+      "items": [
+        {
+          "id": "cmp_chevron",
+          "name": "Chevron",
+          "initials": "CH",
+          "colorKey": "chevron",
+          "coveragePct": 96,
+          "coverageStatus": "complete",
+          "missingCount": 0
+        },
+        {
+          "id": "cmp_isa",
+          "name": "ISA",
+          "initials": "IS",
+          "colorKey": "isa",
+          "coveragePct": 52,
+          "coverageStatus": "incomplete",
+          "missingCount": 3
+        }
+      ],
+      "addableCompanies": [
+        {
+          "id": "cmp_exxon",
+          "name": "Exxon"
+        }
+      ]
+    }
+  },
+  "selected": {
+    "status": "ok",
+    "data": {
+      "companyId": "cmp_chevron",
+      "groups": [
+        {
+          "dimension": "fin",
+          "totalPct": 40,
+          "items": [
+            {
+              "indicatorId": "ind_roace_relativo",
+              "label": "ROACE relativo",
+              "value": 20,
+              "unit": "percent",
+              "isEstimate": false,
+              "justification": null
+            }
+          ]
+        }
+      ],
+      "missing": [
+        {
+          "indicatorId": "ind_prueba_acida",
+          "label": "Prueba ácida",
+          "value": null,
+          "unit": "percent"
+        }
+      ]
+    }
+  },
+  "permissions": {
+    "canEditValues": true,
+    "canAddCompany": true,
+    "canRemoveCompany": true
+  }
+}

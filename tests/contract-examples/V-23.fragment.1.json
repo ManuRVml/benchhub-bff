@@ -1,0 +1,44 @@
+{
+  "scope": "horizon",
+  "items": [
+    {
+      "kind": "most_concentrated",
+      "tone": "info",
+      "text": {
+        "key": "reco.horizon.mostConcentrated",
+        "params": {
+          "company": "Ecopetrol",
+          "indicator": "ROACE",
+          "pct": 45
+        }
+      }
+    },
+    {
+      "kind": "data_consistency",
+      "tone": "watch",
+      "text": {
+        "key": "reco.horizon.dataConsistency",
+        "params": {
+          "company": "Ecopetrol",
+          "companyTotal": 96
+        }
+      }
+    },
+    {
+      "kind": "dominant_dimension",
+      "tone": "action",
+      "text": {
+        "key": "reco.horizon.dominantDimension",
+        "params": {
+          "dimension": "Financiero",
+          "finPct": 45,
+          "opPct": 30,
+          "transPct": 25
+        }
+      }
+    }
+  ],
+  "countActionable": 1,
+  "status": "suggestion",
+  "permissions": {}
+}

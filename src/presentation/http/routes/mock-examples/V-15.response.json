@@ -1,0 +1,63 @@
+{
+  "indicator": {
+    "id": "ind_roace",
+    "label": "ROACE",
+    "unit": "percent",
+    "lowerIsBetter": false
+  },
+  "indicatorOptions": [
+    {
+      "id": "ind_roace",
+      "label": "ROACE"
+    }
+  ],
+  "scopeOptions": [
+    {
+      "id": "all",
+      "labelKey": "comparator.scope.all"
+    }
+  ],
+  "tiles": {
+    "ecopetrolValue": 12.8,
+    "tbgAvg": 19.8,
+    "gapPts": -7,
+    "rank": 7,
+    "of": 9
+  },
+  "ranking": [
+    {
+      "companyId": "cmp_shell",
+      "name": "Shell",
+      "value": 24.1,
+      "isTbgMember": true,
+      "isEcopetrol": false
+    },
+    {
+      "companyId": "cmp_ecopetrol",
+      "name": "Ecopetrol",
+      "value": 12.8,
+      "isTbgMember": false,
+      "isEcopetrol": true
+    }
+  ],
+  "membership": {
+    "inside": [
+      "cmp_shell",
+      "cmp_exxonmobil",
+      "cmp_totalenergies",
+      "cmp_bp"
+    ],
+    "outside": [
+      "cmp_ecopetrol",
+      "cmp_chevron",
+      "cmp_equinor",
+      "cmp_petrobras",
+      "cmp_isa"
+    ]
+  },
+  "gapToLeaderPts": -9.3,
+  "permissions": {
+    "canEditValues": true,
+    "canGenerateNarrative": true
+  }
+}

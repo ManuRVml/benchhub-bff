@@ -1,0 +1,32 @@
+node_modules/
+dist/
+dist-contract/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+public/
+package/
+
+# Local environment & secrets
+.env.local
+.env.*.local
+*.pem
+*.key
+.secrets/
+
+# Tooling / editors / OS
+.vercel/
+.turbo/
+.cache/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+Thumbs.db
+
+# Local agent/orchestration state
+.wt/
+.raster/
+.plan/

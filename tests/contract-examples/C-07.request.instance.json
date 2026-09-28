@@ -1,0 +1,12 @@
+{
+  "weights": [
+    {
+      "indicatorId": "ind_margen_ebitda",
+      "weight": 15
+    },
+    {
+      "indicatorId": "ind_crecimiento_produccion",
+      "weight": 10
+    }
+  ]
+}

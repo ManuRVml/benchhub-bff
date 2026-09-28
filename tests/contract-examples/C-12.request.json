@@ -1,0 +1,6 @@
+{
+  "entityType": "analysis|indicator|company|section|value_monitor|presentation",
+  "entityId": "branded-id",
+  "text": "change-request-description",
+  "kind": "data|scope|recalculation"
+}

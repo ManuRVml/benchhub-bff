@@ -1,0 +1,31 @@
+{
+  "cards": [
+    {
+      "id": "users-roles",
+      "isAvailable": false
+    },
+    {
+      "id": "data-sources",
+      "isAvailable": false
+    },
+    {
+      "id": "companies-peers",
+      "isAvailable": false
+    },
+    {
+      "id": "system-parameters",
+      "isAvailable": false
+    },
+    {
+      "id": "audit",
+      "isAvailable": false
+    }
+  ],
+  "permissions": {
+    "canManageUsers": false,
+    "canManageDataSources": false,
+    "canManageCompanies": false,
+    "canManageParameters": false,
+    "canViewAudit": false
+  }
+}

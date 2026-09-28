@@ -1,0 +1,9 @@
+{
+  "indicatorId": "branded-id",
+  "levers": [
+    {
+      "leverId": "branded-id",
+      "value": "number"
+    }
+  ]
+}

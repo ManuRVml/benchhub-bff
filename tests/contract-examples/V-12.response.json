@@ -1,0 +1,63 @@
+{
+  "company": {
+    "id": "cmp_chevron",
+    "name": "Chevron",
+    "colorKey": "chevron"
+  },
+  "summary": {
+    "wins": 6,
+    "total": 10,
+    "winPct": 60
+  },
+  "groups": [
+    {
+      "category": {
+        "id": "rentabilidad",
+        "label": "Rentabilidad"
+      },
+      "wins": 2,
+      "total": 3,
+      "rows": [
+        {
+          "indicatorId": "ind_roace",
+          "code": "IND-ROACE",
+          "label": "ROACE (%)",
+          "unit": "percent",
+          "geValue": 7.4,
+          "companyValue": 6.3,
+          "diff": 1.1,
+          "diffUnit": "points",
+          "lowerIsBetter": false,
+          "outcome": "above",
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "category": {
+        "id": "opex",
+        "label": "Competitividad OPEX"
+      },
+      "wins": 1,
+      "total": 2,
+      "rows": [
+        {
+          "indicatorId": "ind_costo_levant",
+          "code": "IND-COSTO-LEVANT",
+          "label": "Costo de Levantamiento (USD/B)",
+          "unit": "usd_b",
+          "geValue": 12.2,
+          "companyValue": 4.7,
+          "diff": 7.5,
+          "diffUnit": "usd_b",
+          "lowerIsBetter": true,
+          "outcome": "below",
+          "hasDetail": false
+        }
+      ]
+    }
+  ],
+  "permissions": {
+    "canEditValues": true
+  }
+}

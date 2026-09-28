@@ -1,0 +1,67 @@
+{
+  "baseScore": 91.8,
+  "categories": [
+    {
+      "id": "financiero",
+      "label": "Financiero",
+      "targetPct": 60,
+      "kvis": [
+        {
+          "kviId": "kvi_fcl",
+          "label": "Flujo de Caja Libre",
+          "weightPct": 12,
+          "monitorPct": 149,
+          "band": "ok"
+        },
+        {
+          "kviId": "kvi_deuda",
+          "label": "Deuda Bruta / EBITDA",
+          "weightPct": 6,
+          "monitorPct": 108,
+          "band": "ok"
+        }
+      ]
+    },
+    {
+      "id": "grupos_interes",
+      "label": "Grupos de Interés",
+      "targetPct": 5,
+      "kvis": [
+        {
+          "kviId": "kvi_pib",
+          "label": "Aporte al PIB",
+          "weightPct": 5,
+          "monitorPct": 101,
+          "band": "ok"
+        }
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "kviId": "kvi_deuda",
+      "label": "Deuda Bruta / EBITDA",
+      "gapPts": 28,
+      "weightPct": 6,
+      "tone": "action"
+    },
+    {
+      "kviId": "kvi_cobertura",
+      "label": "Cobertura de Intereses",
+      "gapPts": 25,
+      "weightPct": 6,
+      "tone": "action"
+    },
+    {
+      "kviId": "kvi_precio",
+      "label": "Precio Objetivo Analistas",
+      "gapPts": 11,
+      "weightPct": 5,
+      "tone": "watch"
+    }
+  ],
+  "permissions": {
+    "canSimulate": true,
+    "canGeneratePlan": true
+  }
+}

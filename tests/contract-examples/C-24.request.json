@@ -1,0 +1,9 @@
+{
+  "mode": "weights",
+  "weights": [
+    {
+      "kviId": "branded-id",
+      "weight": 15
+    }
+  ]
+}

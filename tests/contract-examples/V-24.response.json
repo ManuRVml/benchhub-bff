@@ -1,0 +1,85 @@
+{
+  "indicator": {
+    "id": "ind_roace",
+    "label": "ROACE (%)",
+    "unit": "percent",
+    "contextKey": "above_peers"
+  },
+  "kpis": {
+    "status": "ok",
+    "data": {
+      "ecopetrol": 7.4,
+      "peerAvg": 5.5,
+      "geVsAvgPct": 34.5,
+      "deltaVsPeersPct": 34.5
+    }
+  },
+  "series": {
+    "status": "ok",
+    "data": {
+      "periods": {
+        "previous": {
+          "label": "T4 2024"
+        },
+        "current": {
+          "label": "T4 2025"
+        }
+      },
+      "rows": [
+        {
+          "companyId": "cmp_ecopetrol",
+          "name": "Ecopetrol",
+          "isEcopetrol": true,
+          "previous": 10.2,
+          "current": 7.4,
+          "deltaPct": -27.5
+        },
+        {
+          "companyId": "cmp_conocophillips",
+          "name": "ConocoPhillips",
+          "isEcopetrol": false,
+          "previous": 9,
+          "current": 7.2,
+          "deltaPct": -20
+        },
+        {
+          "companyId": "cmp_shell",
+          "name": "Shell",
+          "isEcopetrol": false,
+          "previous": 6.3,
+          "current": 6.5,
+          "deltaPct": 3.2
+        }
+      ],
+      "peerAvgCurrent": 5.5
+    }
+  },
+  "insight": {
+    "status": "ok",
+    "data": {
+      "text": "Ecopetrol supera el promedio de pares en este indicador, sosteniendo una posición competitiva incluso con presión en el entorno de mercado.",
+      "status": "suggestion"
+    }
+  },
+  "traceability": {
+    "status": "ok",
+    "data": {
+      "source": "Capital IQ · Estados financieros trimestrales",
+      "period": {
+        "year": 2025,
+        "quarter": 4
+      },
+      "updatedAt": "2026-09-22T10:00:00-05:00",
+      "history": [
+        {
+          "text": "Alejandra actualizó la fuente a Capital IQ.",
+          "occurredAt": "2026-09-22T10:00:00-05:00"
+        }
+      ]
+    }
+  },
+  "permissions": {
+    "canComment": true,
+    "canRequestChange": true
+  }
+}

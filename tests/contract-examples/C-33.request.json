@@ -1,0 +1,7 @@
+{
+  "message": "user-message-text",
+  "context": {
+    "analysisId": "optional-branded-id",
+    "screen": "inicio|analisis|definicion|resultados|visualizacion|detalle-indicador|monitor-valor|sensibilidades|presentaciones|presentacion-detalle|notificaciones|configuracion"
+  }
+}

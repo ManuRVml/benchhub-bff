@@ -1,0 +1,18 @@
+{
+  "profile": {
+    "displayName": "Camila Bravo",
+    "roleLabel": "Analista creador",
+    "area": "VP Tecnología e Innovación"
+  },
+  "accessibility": {
+    "fontScale": 1,
+    "fontScaleOptions": [
+      0.9,
+      1,
+      1.1
+    ],
+    "highContrast": false
+  },
+  "emailNotifications": true,
+  "permissions": {}
+}

@@ -1,0 +1,61 @@
+name: Package and gate deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      web_run_id:
+        description: GitHub Actions run ID that produced the pinned web-dist artifact
+        required: true
+        type: string
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout BFF
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+
+      - name: Enable pnpm
+        run: corepack enable
+
+      - name: Install BFF dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Download pinned web dist
+        # Cross-repository artifact download needs a PAT with Actions read access in WEB_ARTIFACT_TOKEN.
+        # The web CI uploads one `web-dist-<web sha>` artifact per run; the run id pins which one.
+        uses: actions/download-artifact@v4
+        with:
+          pattern: web-dist-*
+          merge-multiple: true
+          path: web-dist
+          repository: ${{ vars.WEB_REPOSITORY }}
+          run-id: ${{ inputs.web_run_id }}
+          github-token: ${{ secrets.WEB_ARTIFACT_TOKEN }}
+
+      - name: Package BFF with pinned web dist
+        run: pnpm package:with-web --web-dist web-dist
+
+      - name: Upload deployable package
+        uses: actions/upload-artifact@v4
+        with:
+          name: bff-package
+          path: package/
+          retention-days: 7
+
+  deploy:
+    needs: package
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Deployment approval placeholder
+        run: |
+          # Do not deploy until the owner approves the production environment and supplies Databricks credentials.
+          # databricks apps deploy ./package

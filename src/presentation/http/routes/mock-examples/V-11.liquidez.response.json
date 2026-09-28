@@ -1,0 +1,57 @@
+{
+  "categories": [
+    {
+      "id": "rentabilidad",
+      "label": "Rentabilidad"
+    },
+    {
+      "id": "liquidez",
+      "label": "Liquidez"
+    },
+    {
+      "id": "operacional",
+      "label": "Operacional"
+    },
+    {
+      "id": "opex",
+      "label": "Competitividad OPEX"
+    },
+    {
+      "id": "solvencia",
+      "label": "Solvencia"
+    },
+    {
+      "id": "esg",
+      "label": "ESG"
+    }
+  ],
+  "category": "liquidez",
+  "rows": [
+    {
+      "indicatorId": "ind_prueba_acida",
+      "label": "Prueba ácida (x)",
+      "unit": "ratio_x",
+      "geValue": 1.3,
+      "peerAvg": 0.8,
+      "hasDetail": false
+    },
+    {
+      "indicatorId": "ind_razon_corriente",
+      "label": "Razón corriente (x)",
+      "unit": "ratio_x",
+      "geValue": 1.5,
+      "peerAvg": 1.2,
+      "hasDetail": false
+    }
+  ],
+  "peerAvgCompanies": [
+    "cmp_chevron",
+    "cmp_shell",
+    "cmp_equinor",
+    "cmp_bp",
+    "cmp_isa"
+  ],
+  "permissions": {
+    "canEditValues": true
+  }
+}

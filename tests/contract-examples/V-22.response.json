@@ -1,0 +1,32 @@
+{
+  "category": {
+    "id": "rentabilidad",
+    "label": "Rentabilidad",
+    "message": "Ecopetrol mantiene margen sólido pese a la contracción."
+  },
+  "rows": [
+    {
+      "indicatorId": "ind_roace",
+      "code": "IND-ROACE",
+      "label": "ROACE (%)",
+      "unit": "percent",
+      "valueKind": "level",
+      "ecopetrol": 7.4,
+      "peerAvg": 5.5,
+      "tierId": 2,
+      "hasDetail": true
+    },
+    {
+      "indicatorId": "ind_crec_ebitda",
+      "code": "IND-CREC-EBITDA",
+      "label": "Crecimiento EBITDA (%)",
+      "unit": "percent",
+      "valueKind": "growth",
+      "ecopetrol": -13.8,
+      "peerAvg": -2.2,
+      "tierId": 4,
+      "hasDetail": false
+    }
+  ],
+  "permissions": {}
+}

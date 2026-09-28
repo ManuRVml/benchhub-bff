@@ -1,0 +1,7 @@
+{
+  "source": "custom",
+  "indicatorIds": [
+    "ind_crec_produccion",
+    "ind_deuda_ebitda"
+  ]
+}

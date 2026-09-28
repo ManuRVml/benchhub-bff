@@ -1,0 +1,53 @@
+{
+  "indicator": {
+    "id": "ind_roace",
+    "label": "ROACE",
+    "unit": "percent"
+  },
+  "periodLabel": "2025",
+  "rows": [
+    {
+      "rank": 1,
+      "companyId": "cmp_ecopetrol",
+      "displayName": "Ecopetrol",
+      "value": 7.4,
+      "isEcopetrol": true
+    },
+    {
+      "rank": 2,
+      "companyId": "cmp_conocophillips",
+      "displayName": "ConocoPhillips",
+      "value": 7.2,
+      "isEcopetrol": false
+    },
+    {
+      "rank": 3,
+      "companyId": "cmp_pttep",
+      "displayName": "PTTEP",
+      "value": 6.7,
+      "isEcopetrol": false
+    },
+    {
+      "rank": 4,
+      "companyId": "cmp_exxon",
+      "displayName": "Exxon",
+      "value": 6.7,
+      "isEcopetrol": false
+    },
+    {
+      "rank": 5,
+      "companyId": "cmp_shell",
+      "displayName": "Shell",
+      "value": 6.5,
+      "isEcopetrol": false
+    },
+    {
+      "rank": 6,
+      "companyId": "cmp_totalenergies",
+      "displayName": "Total",
+      "value": 6.1,
+      "isEcopetrol": false
+    }
+  ],
+  "permissions": {}
+}

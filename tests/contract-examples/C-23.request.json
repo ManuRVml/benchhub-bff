@@ -1,0 +1,17 @@
+{
+  "simulationData": {
+    "indicatorId": "branded-id",
+    "scenarios": [
+      {
+        "name": "Baseline",
+        "levers": [
+          {
+            "leverId": "branded-id",
+            "value": 100
+          }
+        ],
+        "simulatedValue": 120
+      }
+    ]
+  }
+}

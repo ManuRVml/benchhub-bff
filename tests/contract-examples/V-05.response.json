@@ -1,0 +1,103 @@
+{
+  "draft": {
+    "id": "drf_01J9ZA2B3C",
+    "type": "estrategico_tbg",
+    "name": "Desempeño comparativo — 4T 2025",
+    "objective": "Evaluar la posición competitiva de Ecopetrol al cierre del cuarto trimestre de 2025 frente a pares del sector energético.",
+    "question": "¿Cómo se posiciona Ecopetrol frente a comparables en EBITDA, márgenes y producción en el 4T 2025?",
+    "currentPeriod": {
+      "year": 2025,
+      "quarter": 4
+    },
+    "comparedPeriod": {
+      "year": 2025,
+      "quarter": 3
+    },
+    "cutOffDate": null,
+    "scope": [
+      "grupo_ecopetrol"
+    ],
+    "competitorIds": [
+      "cmp_chevron",
+      "cmp_exxon",
+      "cmp_shell",
+      "cmp_equinor",
+      "cmp_total",
+      "cmp_bp",
+      "cmp_pttep"
+    ],
+    "indicatorIds": [
+      "ind_roace",
+      "ind_margen_ebitda"
+    ],
+    "sources": [
+      {
+        "id": "capital_iq",
+        "isPrimary": true
+      },
+      {
+        "id": "bloomberg",
+        "isPrimary": false
+      },
+      {
+        "id": "platts",
+        "isPrimary": false
+      }
+    ]
+  },
+  "stepStatus": [
+    {
+      "step": 1,
+      "status": "valid",
+      "errors": []
+    },
+    {
+      "step": 2,
+      "status": "valid",
+      "errors": []
+    },
+    {
+      "step": 3,
+      "status": "valid",
+      "errors": []
+    },
+    {
+      "step": 4,
+      "status": "valid",
+      "errors": []
+    },
+    {
+      "step": 5,
+      "status": "untouched",
+      "errors": []
+    }
+  ],
+  "options": {
+    "types": [
+      "estrategico_tbg",
+      "estrategico_ilp",
+      "desempeno_pares"
+    ],
+    "quarters": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "years": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "scopes": [
+      "grupo_ecopetrol",
+      "isa"
+    ]
+  },
+  "permissions": {
+    "canEdit": true,
+    "canGenerate": true
+  }
+}

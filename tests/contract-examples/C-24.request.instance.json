@@ -1,0 +1,13 @@
+{
+  "mode": "weights",
+  "weights": [
+    {
+      "kviId": "kvi_roace",
+      "weight": 15
+    },
+    {
+      "kviId": "kvi_ebitda",
+      "weight": 10
+    }
+  ]
+}

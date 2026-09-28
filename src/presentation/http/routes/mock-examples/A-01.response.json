@@ -1,0 +1,7 @@
+{
+  "error": {
+    "code": "AUTH_PROVIDER_UNAVAILABLE",
+    "messageKey": "auth.error.providerUnavailable",
+    "traceId": "01J9ZK3T6W8Q2V5N4R7XHB0C1D"
+  }
+}

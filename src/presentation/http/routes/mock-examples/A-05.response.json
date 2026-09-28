@@ -1,0 +1,58 @@
+{
+  "user": {
+    "id": "usr_01J9Y7C2QK",
+    "displayName": "Camila Bravo",
+    "avatarFileId": "fil_01J9Y7C4AV",
+    "roleLabelKey": "role.analystCreator"
+  },
+  "role": "analyst_creator",
+  "hasAdminAccess": false,
+  "requiresGate": false,
+  "navigation": [
+    {
+      "id": "inicio",
+      "labelKey": "nav.inicio",
+      "to": "/inicio",
+      "isLocked": false
+    },
+    {
+      "id": "ref-tbg-ilp",
+      "labelKey": "nav.refTbgIlp",
+      "to": "/analisis?ref=tbg-ilp",
+      "isLocked": false
+    },
+    {
+      "id": "ref-competitivo",
+      "labelKey": "nav.refCompetitivo",
+      "to": "/analisis/ana_01J9Y8D4T2/resultados",
+      "isLocked": false
+    },
+    {
+      "id": "monitor-valor",
+      "labelKey": "nav.monitorValor",
+      "to": "/monitor-valor",
+      "isLocked": false
+    },
+    {
+      "id": "presentaciones",
+      "labelKey": "nav.presentaciones",
+      "to": "/presentaciones",
+      "isLocked": false
+    },
+    {
+      "id": "notificaciones",
+      "labelKey": "nav.notificaciones",
+      "to": "/notificaciones",
+      "isLocked": false
+    }
+  ],
+  "analysisContext": {
+    "defaultAnalysisId": "ana_01J9Y8D4T2"
+  },
+  "permissions": {
+    "canUseAssistant": true,
+    "canCreateAnalysis": true,
+    "canViewAnalysisList": true,
+    "canUseAnalysisTabs": true
+  }
+}

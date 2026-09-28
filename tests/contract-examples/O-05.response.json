@@ -1,0 +1,18 @@
+{
+  "status": "degraded",
+  "version": "0.1.0",
+  "checks": [
+    {
+      "name": "session-store",
+      "status": "ok"
+    },
+    {
+      "name": "analytics-provider",
+      "status": "ok"
+    },
+    {
+      "name": "job-orchestrator",
+      "status": "failing"
+    }
+  ]
+}

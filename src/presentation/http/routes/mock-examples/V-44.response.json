@@ -1,0 +1,110 @@
+{
+  "items": [
+    {
+      "id": "ntf_chevron_t4",
+      "type": "dato",
+      "severity": "info",
+      "text": "Nueva actualización disponible: Chevron T4 2025.",
+      "createdAt": "2026-09-27T13:00:00-05:00",
+      "isRead": false,
+      "target": {
+        "route": "/analisis/ana_desempeno_4t2025/resultados"
+      }
+    },
+    {
+      "id": "ntf_cobertura_82",
+      "type": "dato",
+      "severity": "success",
+      "text": "Cobertura de datos alcanzó 82% del informe de pares.",
+      "createdAt": "2026-09-27T10:00:00-05:00",
+      "isRead": false,
+      "target": null
+    },
+    {
+      "id": "ntf_isa_bloqueo",
+      "type": "dato",
+      "severity": "error",
+      "text": "ISA no ha remitido información del corte — bloquea 3 indicadores.",
+      "createdAt": "2026-09-26T11:00:00-05:00",
+      "isRead": false,
+      "target": null
+    },
+    {
+      "id": "ntf_comentario_roace",
+      "type": "comentario",
+      "severity": "warn",
+      "text": "Comentario pendiente de Ejecutivo Integral en ROACE.",
+      "createdAt": "2026-09-26T09:00:00-05:00",
+      "isRead": false,
+      "target": null
+    },
+    {
+      "id": "ntf_publicacion_referentes",
+      "type": "publicacion",
+      "severity": "info",
+      "text": "Andrea publicó el análisis de Referentes Estratégicos.",
+      "createdAt": "2026-09-25T10:00:00-05:00",
+      "isRead": false,
+      "target": null
+    },
+    {
+      "id": "ntf_ia_margen_ebitda",
+      "type": "ia",
+      "severity": "warn",
+      "text": "Yarbis detectó una anomalía en Margen EBITDA frente al histórico.",
+      "createdAt": "2026-09-24T12:00:00-05:00",
+      "isRead": false,
+      "target": null
+    },
+    {
+      "id": "ntf_noticia_brent",
+      "type": "noticia",
+      "severity": "error",
+      "text": "Nueva noticia de alto impacto: caída sostenida del Brent.",
+      "createdAt": "2026-09-24T09:00:00-05:00",
+      "isRead": false,
+      "target": null
+    },
+    {
+      "id": "ntf_petrobras_tbg",
+      "type": "colaboracion",
+      "severity": "info",
+      "text": "Se agregó Petrobras como nuevo competidor en el análisis TBG.",
+      "createdAt": "2026-09-23T10:00:00-05:00",
+      "isRead": false,
+      "target": null
+    },
+    {
+      "id": "ntf_comentario_storytelling",
+      "type": "comentario",
+      "severity": "info",
+      "text": "Presentación \"Storytelling de Mercado\" recibió un comentario nuevo.",
+      "createdAt": "2026-09-22T10:00:00-05:00",
+      "isRead": false,
+      "target": null
+    },
+    {
+      "id": "ntf_homologacion_bp_shell",
+      "type": "dato",
+      "severity": "success",
+      "text": "Homologación de datos completada al 100% para BP y Shell.",
+      "createdAt": "2026-09-21T12:00:00-05:00",
+      "isRead": false,
+      "target": null
+    },
+    {
+      "id": "ntf_mantenimiento",
+      "type": "sistema",
+      "severity": "info",
+      "text": "Mantenimiento programado del sistema el sábado de 10pm a 12am.",
+      "createdAt": "2026-09-21T08:00:00-05:00",
+      "isRead": false,
+      "target": null
+    }
+  ],
+  "page": 1,
+  "pageSize": 20,
+  "totalItems": 11,
+  "unreadCount": 11,
+  "permissions": {}
+}

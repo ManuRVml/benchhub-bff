@@ -1,0 +1,207 @@
+{
+  "company": {
+    "id": "cmp_chevron",
+    "name": "Chevron",
+    "colorKey": "chevron"
+  },
+  "summary": {
+    "wins": 6,
+    "total": 10,
+    "winPct": 60
+  },
+  "groups": [
+    {
+      "category": {
+        "id": "rentabilidad",
+        "label": "Rentabilidad"
+      },
+      "wins": 2,
+      "total": 3,
+      "rows": [
+        {
+          "indicatorId": "ind_roace",
+          "code": "IND-ROACE",
+          "label": "ROACE (%)",
+          "unit": "percent",
+          "geValue": 7.4,
+          "companyValue": 6.3,
+          "diff": 1.1,
+          "diffUnit": "points",
+          "lowerIsBetter": false,
+          "outcome": "above",
+          "hasDetail": true
+        },
+        {
+          "indicatorId": "ind_margen_ebitda",
+          "code": "IND-MARGEN-EBITDA",
+          "label": "Margen EBITDA (%)",
+          "unit": "percent",
+          "geValue": 39,
+          "companyValue": 29.8,
+          "diff": 9.2,
+          "diffUnit": "points",
+          "lowerIsBetter": false,
+          "outcome": "above",
+          "hasDetail": true
+        },
+        {
+          "indicatorId": "ind_crec_ebitda",
+          "code": "IND-CREC-EBITDA",
+          "label": "Crecimiento EBITDA (%)",
+          "unit": "percent",
+          "geValue": -13.8,
+          "companyValue": -2,
+          "diff": -11.8,
+          "diffUnit": "points",
+          "lowerIsBetter": false,
+          "outcome": "below",
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "category": {
+        "id": "liquidez",
+        "label": "Liquidez"
+      },
+      "wins": 2,
+      "total": 2,
+      "rows": [
+        {
+          "indicatorId": "ind_prueba_acida",
+          "code": "IND-PRUEBA-ACIDA",
+          "label": "Prueba ácida (x)",
+          "unit": "ratio_x",
+          "geValue": 1.3,
+          "companyValue": 0.6,
+          "diff": 0.7,
+          "diffUnit": "ratio_x",
+          "lowerIsBetter": false,
+          "outcome": "above",
+          "hasDetail": false
+        },
+        {
+          "indicatorId": "ind_razon_corriente",
+          "code": "IND-RAZON-CORRIENTE",
+          "label": "Razón corriente (x)",
+          "unit": "ratio_x",
+          "geValue": 1.5,
+          "companyValue": 1,
+          "diff": 0.5,
+          "diffUnit": "ratio_x",
+          "lowerIsBetter": false,
+          "outcome": "above",
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "category": {
+        "id": "operacional",
+        "label": "Operacional"
+      },
+      "wins": 0,
+      "total": 1,
+      "rows": [
+        {
+          "indicatorId": "ind_crec_produccion",
+          "code": "IND-CREC-PRODUCCION",
+          "label": "Crecimiento Producción (%)",
+          "unit": "percent",
+          "geValue": -0.1,
+          "companyValue": 5.8,
+          "diff": -5.9,
+          "diffUnit": "points",
+          "lowerIsBetter": false,
+          "outcome": "below",
+          "hasDetail": true
+        }
+      ]
+    },
+    {
+      "category": {
+        "id": "opex",
+        "label": "Competitividad OPEX"
+      },
+      "wins": 1,
+      "total": 2,
+      "rows": [
+        {
+          "indicatorId": "ind_costo_levant",
+          "code": "IND-COSTO-LEVANT",
+          "label": "Costo de Levantamiento (USD/B)",
+          "unit": "usd_b",
+          "geValue": 12.2,
+          "companyValue": 4.7,
+          "diff": 7.5,
+          "diffUnit": "usd_b",
+          "lowerIsBetter": true,
+          "outcome": "below",
+          "hasDetail": false
+        },
+        {
+          "indicatorId": "ind_costo_ventas",
+          "code": "IND-COSTO-VENTAS",
+          "label": "Costo de ventas/BI (USD/B)",
+          "unit": "usd_b",
+          "geValue": 66.1,
+          "companyValue": 151.6,
+          "diff": -85.5,
+          "diffUnit": "usd_b",
+          "lowerIsBetter": true,
+          "outcome": "above",
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "category": {
+        "id": "solvencia",
+        "label": "Solvencia"
+      },
+      "wins": 0,
+      "total": 1,
+      "rows": [
+        {
+          "indicatorId": "ind_deuda_ebitda",
+          "code": "IND-DEUDA-EBITDA",
+          "label": "Deuda Neta/EBITDA (x)",
+          "unit": "ratio_x",
+          "geValue": 2.4,
+          "companyValue": 1.7,
+          "diff": 0.7,
+          "diffUnit": "ratio_x",
+          "lowerIsBetter": true,
+          "outcome": "below",
+          "hasDetail": false
+        }
+      ]
+    },
+    {
+      "category": {
+        "id": "esg",
+        "label": "ESG"
+      },
+      "wins": 1,
+      "total": 1,
+      "rows": [
+        {
+          "indicatorId": "ind_gobernanza",
+          "code": "IND-GOBERNANZA",
+          "label": "Gobernanza (puntos)",
+          "unit": "points",
+          "geValue": 78,
+          "companyValue": 61.6,
+          "diff": 16.4,
+          "diffUnit": "points",
+          "lowerIsBetter": false,
+          "outcome": "above",
+          "hasDetail": false
+        }
+      ]
+    }
+  ],
+  "permissions": {
+    "canEditValues": true
+  }
+}

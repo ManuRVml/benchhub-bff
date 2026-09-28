@@ -1,0 +1,11 @@
+{
+  "validationState": {
+    "isValid": true,
+    "errors": [
+      {
+        "field": "fieldName",
+        "code": "required"
+      }
+    ]
+  }
+}

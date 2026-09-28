@@ -1,0 +1,13 @@
+{
+  "indicatorId": "ind_roace",
+  "levers": [
+    {
+      "leverId": "lev_productividad",
+      "value": -5
+    },
+    {
+      "leverId": "lev_costos",
+      "value": -5000
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "companyDetail": {
+    "companyId": "cmp_bp",
+    "name": "BP",
+    "tbg": {
+      "indicatorCount": 6,
+      "dims": [
+        {
+          "dimension": "fin",
+          "totalPct": 55,
+          "items": [
+            {
+              "label": "Flujo de Caja Libre (Normalizado)",
+              "weightPct": 30
+            }
+          ]
+        }
+      ]
+    },
+    "ilp": {
+      "indicatorCount": 5,
+      "hitoCount": 0,
+      "dims": [
+        {
+          "dimension": "fin",
+          "totalPct": 50,
+          "items": [
+            {
+              "label": "ROACE",
+              "weightPct": 25,
+              "isHito": false,
+              "subItems": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

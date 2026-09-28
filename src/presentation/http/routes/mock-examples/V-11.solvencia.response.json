@@ -1,0 +1,49 @@
+{
+  "categories": [
+    {
+      "id": "rentabilidad",
+      "label": "Rentabilidad"
+    },
+    {
+      "id": "liquidez",
+      "label": "Liquidez"
+    },
+    {
+      "id": "operacional",
+      "label": "Operacional"
+    },
+    {
+      "id": "opex",
+      "label": "Competitividad OPEX"
+    },
+    {
+      "id": "solvencia",
+      "label": "Solvencia"
+    },
+    {
+      "id": "esg",
+      "label": "ESG"
+    }
+  ],
+  "category": "solvencia",
+  "rows": [
+    {
+      "indicatorId": "ind_deuda_ebitda",
+      "label": "Deuda Neta/EBITDA (x)",
+      "unit": "ratio_x",
+      "geValue": 2.4,
+      "peerAvg": 1.6,
+      "hasDetail": false
+    }
+  ],
+  "peerAvgCompanies": [
+    "cmp_chevron",
+    "cmp_shell",
+    "cmp_equinor",
+    "cmp_bp",
+    "cmp_isa"
+  ],
+  "permissions": {
+    "canEditValues": true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "groups": [
+    {
+      "id": "super_majors",
+      "label": "Super Majors",
+      "businessLine": "oil_gas",
+      "companies": [
+        {
+          "id": "cmp_exxon",
+          "name": "Exxon",
+          "country": "Estados Unidos",
+          "category": "Super Major",
+          "colorKey": "exxon"
+        },
+        {
+          "id": "cmp_chevron",
+          "name": "Chevron",
+          "country": "Estados Unidos",
+          "category": "Super Major",
+          "colorKey": "chevron"
+        }
+      ]
+    },
+    {
+      "id": "nocs",
+      "label": "NOCs",
+      "businessLine": "oil_gas",
+      "companies": [
+        {
+          "id": "cmp_petrobras",
+          "name": "Petrobras",
+          "country": "Brasil",
+          "category": "NOC",
+          "colorKey": "petrobras"
+        }
+      ]
+    }
+  ],
+  "suggestion": {
+    "text": "te sugiero incluir Petrobras — comparte características NOC con Ecopetrol.",
+    "companyId": "cmp_petrobras",
+    "aiStatus": "suggestion"
+  },
+  "permissions": {}
+}

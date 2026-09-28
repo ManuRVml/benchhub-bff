@@ -1,0 +1,35 @@
+{
+  "dimension": "fin",
+  "ecopetrolPct": 45,
+  "peerAvgPct": 43,
+  "diffPts": 2,
+  "message": {
+    "key": "tbgWeights.message.above",
+    "params": {
+      "diffPts": 2,
+      "dimension": "fin"
+    }
+  },
+  "detail": [
+    {
+      "rank": 1,
+      "companyId": "cmp_totalenergies",
+      "name": "TotalEnergies",
+      "pct": 62
+    },
+    {
+      "rank": 2,
+      "companyId": "cmp_bp",
+      "name": "BP",
+      "pct": 55
+    },
+    {
+      "rank": 6,
+      "companyId": "cmp_petrobras",
+      "name": "Petrobras",
+      "pct": 33
+    }
+  ],
+  "recommendationsCount": 0,
+  "permissions": {}
+}

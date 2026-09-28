@@ -1,0 +1,29 @@
+{
+  "user": {
+    "id": "usr_01J9Y7C2QK",
+    "displayName": "Camila Bravo",
+    "avatarFileId": "fil_01J9Y7C4AV",
+    "roleLabelKey": "role.analystCreator"
+  },
+  "role": "analyst_creator",
+  "hasAdminAccess": false,
+  "requiresGate": false,
+  "navigation": [
+    {
+      "id": "inicio",
+      "labelKey": "nav.inicio",
+      "to": "/inicio",
+      "isLocked": false
+    }
+  ],
+  "analysisContext": {
+    "defaultAnalysisId": "ana_01J9Y8D4T2"
+  },
+  "permissions": {
+    "canUseAssistant": true,
+    "canCreateAnalysis": true,
+    "canViewAnalysisList": true,
+    "canUseAnalysisTabs": true
+  },
+  "csrfToken": "4f1c2b9d8e7a6f5c4b3a29181716151413121110"
+}

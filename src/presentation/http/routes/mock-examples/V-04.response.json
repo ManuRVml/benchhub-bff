@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "id": "ana_01J9Y8D4T2",
+      "name": "Desempeño comparativo — 4T 2025",
+      "description": "Referenciamiento competitivo trimestral de Ecopetrol frente a pares del sector energético en solvencia, rentabilidad, liquidez, OPEX y crecimiento.",
+      "createdOn": "2025-10-03",
+      "createdBy": {
+        "id": "usr_01J9Y7C2QK",
+        "fullName": "Camila Bravo"
+      },
+      "status": "in_review",
+      "canOpenResults": true
+    },
+    {
+      "id": "ana_01J9Y8J1R4",
+      "name": "Análisis anual 2024 vs. pares",
+      "description": "Comparación anual de indicadores financieros y operativos frente al grupo de pares del sector energético.",
+      "createdOn": "2025-01-14",
+      "createdBy": {
+        "id": "usr_01J9Y7C9JS",
+        "fullName": "Jorge Salas"
+      },
+      "status": "published",
+      "canOpenResults": true
+    },
+    {
+      "id": "ana_01J9Y8K5T7",
+      "name": "Sensibilidad ROACE — Escenario optimista",
+      "description": "Simulación de productividad y costos operativos para evaluar el cierre de brecha en ROACE frente a pares.",
+      "createdOn": "2025-08-22",
+      "createdBy": {
+        "id": "usr_01J9Y7C2QK",
+        "fullName": "Camila Bravo"
+      },
+      "status": "draft",
+      "canOpenResults": true
+    }
+  ],
+  "page": 1,
+  "pageSize": 20,
+  "totalItems": 3,
+  "filterOptions": {
+    "createdOn": [
+      "2025-10-03",
+      "2025-01-14",
+      "2025-08-22"
+    ],
+    "createdBy": [
+      {
+        "id": "usr_01J9Y7C2QK",
+        "fullName": "Camila Bravo"
+      },
+      {
+        "id": "usr_01J9Y7C9JS",
+        "fullName": "Jorge Salas"
+      }
+    ],
+    "status": [
+      "in_review",
+      "published",
+      "draft"
+    ]
+  },
+  "permissions": {
+    "canCreate": true
+  }
+}

@@ -1,0 +1,16 @@
+# Databricks Apps manifest (ADR-0007 §5). The platform injects DATABRICKS_APP_PORT, which src/config/env.ts prefers over
+# PORT. Secrets come from App resources (secret scope), never from literals in this file (ADR-0004).
+command: ['node', 'dist/main.js']
+env:
+  - name: NODE_ENV
+    value: 'production'
+  # mock until the real Databricks / Entra providers land (P4); switch to "real" with that deployment.
+  - name: PROVIDERS_DEFAULT
+    value: 'mock'
+  - name: LOG_LEVEL
+    value: 'info'
+  - name: SESSION_STORE
+    value: 'memory'
+  # Resource key of the App's secret resource that holds the session signing secret (at least 32 characters).
+  - name: SESSION_SECRET
+    valueFrom: session-secret

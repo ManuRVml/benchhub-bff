@@ -1,0 +1,53 @@
+{
+  "variables": [
+    {
+      "id": "productivity",
+      "label": "Productividad",
+      "unit": "percent",
+      "min": -5,
+      "max": 10,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "id": "operating_costs",
+      "label": "Costos operativos",
+      "unit": "percent",
+      "min": -15,
+      "max": 10,
+      "step": 1,
+      "default": 0
+    }
+  ],
+  "baseRoace": 7.4,
+  "peerAvgRoace": 5.5,
+  "presets": [
+    {
+      "id": "base",
+      "label": "Base",
+      "values": {
+        "productivity": 0,
+        "operating_costs": 0
+      }
+    },
+    {
+      "id": "optimistic",
+      "label": "Optimista",
+      "values": {
+        "productivity": 5,
+        "operating_costs": -5
+      }
+    },
+    {
+      "id": "conservative",
+      "label": "Conservador",
+      "values": {
+        "productivity": -3,
+        "operating_costs": 3
+      }
+    }
+  ],
+  "permissions": {
+    "canSimulate": true
+  }
+}

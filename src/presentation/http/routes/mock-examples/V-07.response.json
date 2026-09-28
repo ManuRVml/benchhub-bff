@@ -1,0 +1,37 @@
+{
+  "source": "pares",
+  "groups": [
+    {
+      "id": "rentabilidad",
+      "label": "Rentabilidad",
+      "items": [
+        {
+          "id": "ind_roace",
+          "code": "PAR-01",
+          "label": "ROACE",
+          "unit": "percent",
+          "concept": "rentabilidad",
+          "horizon": null,
+          "sources": [
+            "capital_iq"
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "groups": 5,
+    "indicators": 27
+  },
+  "filterOptions": {
+    "concepts": [
+      "rentabilidad",
+      "liquidez",
+      "operacional",
+      "solvencia",
+      "opex"
+    ],
+    "horizons": []
+  },
+  "permissions": {}
+}

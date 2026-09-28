@@ -1,0 +1,11 @@
+{
+  "name": "Perfil 1 · Descarbonización y renovables",
+  "description": "Pares con estrategia de transición energética",
+  "companyIds": [
+    "cmp_shell",
+    "cmp_bp",
+    "cmp_equinor",
+    "cmp_totalenergies"
+  ],
+  "isDefault": true
+}

@@ -1,0 +1,17 @@
+{
+  "plan": {
+    "planId": "plan_1",
+    "status": "suggestion",
+    "rows": [
+      {
+        "kviId": "kvi_roace",
+        "indicatorLabel": "ROACE",
+        "urgency": "high",
+        "gapPts": 15,
+        "weightPct": 20,
+        "action": "Plan de choque: revisar drivers operativos y de costo del indicador",
+        "termDays": 30
+      }
+    ]
+  }
+}

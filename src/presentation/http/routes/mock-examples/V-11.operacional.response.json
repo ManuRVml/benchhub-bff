@@ -1,0 +1,49 @@
+{
+  "categories": [
+    {
+      "id": "rentabilidad",
+      "label": "Rentabilidad"
+    },
+    {
+      "id": "liquidez",
+      "label": "Liquidez"
+    },
+    {
+      "id": "operacional",
+      "label": "Operacional"
+    },
+    {
+      "id": "opex",
+      "label": "Competitividad OPEX"
+    },
+    {
+      "id": "solvencia",
+      "label": "Solvencia"
+    },
+    {
+      "id": "esg",
+      "label": "ESG"
+    }
+  ],
+  "category": "operacional",
+  "rows": [
+    {
+      "indicatorId": "ind_crec_produccion",
+      "label": "Crecimiento Producción (%)",
+      "unit": "percent",
+      "geValue": -0.1,
+      "peerAvg": 5.1,
+      "hasDetail": true
+    }
+  ],
+  "peerAvgCompanies": [
+    "cmp_chevron",
+    "cmp_shell",
+    "cmp_equinor",
+    "cmp_bp",
+    "cmp_isa"
+  ],
+  "permissions": {
+    "canEditValues": true
+  }
+}

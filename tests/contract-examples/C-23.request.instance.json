@@ -1,0 +1,21 @@
+{
+  "simulationData": {
+    "indicatorId": "ind_roace",
+    "scenarios": [
+      {
+        "name": "Sugerencia Yarbis",
+        "levers": [
+          {
+            "leverId": "lev_productividad",
+            "value": -5
+          },
+          {
+            "leverId": "lev_costos",
+            "value": -5000
+          }
+        ],
+        "simulatedValue": 8.1
+      }
+    ]
+  }
+}

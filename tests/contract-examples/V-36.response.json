@@ -1,0 +1,89 @@
+{
+  "radar": {
+    "status": "ok",
+    "data": {
+      "axes": [
+        {
+          "kviId": "kvi_fcl",
+          "label": "Flujo de Caja Libre"
+        },
+        {
+          "kviId": "kvi_deuda",
+          "label": "Deuda Bruta / EBITDA"
+        }
+      ],
+      "series": [
+        {
+          "companyId": "cmp_ecopetrol",
+          "name": "Ecopetrol",
+          "year": 2025,
+          "colorKey": "ecopetrol",
+          "values": [
+            100,
+            100
+          ]
+        },
+        {
+          "companyId": "cmp_shell",
+          "name": "Shell",
+          "year": 2025,
+          "colorKey": "shell",
+          "values": [
+            88,
+            92
+          ]
+        }
+      ]
+    }
+  },
+  "ranking": {
+    "status": "ok",
+    "data": {
+      "strengths": [
+        {
+          "kviId": "kvi_fcl",
+          "label": "Flujo de Caja Libre",
+          "pct": 100
+        }
+      ],
+      "opportunities": [
+        {
+          "kviId": "kvi_cobertura",
+          "label": "Cobertura de Intereses",
+          "pct": 75
+        }
+      ]
+    }
+  },
+  "insight": {
+    "status": "ok",
+    "data": {
+      "text": "Ecopetrol muestra un desempeño sólido en Flujo de Caja Libre, Deuda Bruta / EBITDA, Eficiencias, con brechas relevantes frente al líder en Cobertura de Intereses, EFI Activos Pareto Upstream, TIR Activos Pareto Upstream.",
+      "tone": "watch",
+      "status": "suggestion",
+      "generatedBy": {
+        "model": "mock-llm",
+        "version": "1"
+      }
+    }
+  },
+  "companyOptions": [
+    {
+      "id": "cmp_bp",
+      "name": "BP"
+    },
+    {
+      "id": "cmp_equinor",
+      "name": "Equinor"
+    }
+  ],
+  "yearOptions": [
+    2023,
+    2024,
+    2025
+  ],
+  "permissions": {
+    "canExport": true,
+    "canUseAssistant": true
+  }
+}

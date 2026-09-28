@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "id": "prs_directorio_t4",
+    "name": "Directorio Ejecutivo T4",
+    "templateId": "directorio",
+    "templateName": "Directorio Ejecutivo",
+    "status": "published",
+    "createdOn": "2025-10-02",
+    "publishedOn": "2025-10-05",
+    "hasUploadedVersion": false
+  },
+  "accentKey": "template.directorio",
+  "slideRef": {
+    "view": "V-42",
+    "path": "/api/v1/views/presentation-slides/prs_directorio_t4",
+    "slideCount": 7
+  },
+  "comments": {
+    "count": 2
+  },
+  "permissions": {
+    "canEdit": true,
+    "canDownload": true,
+    "canComment": true
+  }
+}

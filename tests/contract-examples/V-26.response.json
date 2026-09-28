@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "id": "cmt_01J9ZB1C2D",
+      "kind": "comment",
+      "author": {
+        "name": "Alejandra Ríos",
+        "roleLabelKey": "role.executiveIntegral"
+      },
+      "text": "¿Por qué la brecha con Shell se amplió tanto en el último trimestre?",
+      "createdAt": "2026-09-23T09:10:00-05:00",
+      "status": "in_analysis",
+      "decision": null,
+      "replies": [
+        {
+          "id": "cmt_01J9ZB1C2E",
+          "author": {
+            "name": "Camilo Vega",
+            "roleLabelKey": "role.analystCreator"
+          },
+          "text": "Shell reportó una revisión al alza en su margen EBITDA; ya está reflejada en la fuente Capital IQ.",
+          "createdAt": "2026-09-24T11:00:00-05:00"
+        }
+      ]
+    },
+    {
+      "id": "chr_01J9ZB4F5G",
+      "kind": "change_request",
+      "author": {
+        "name": "Alejandra Ríos",
+        "roleLabelKey": "role.executiveIntegral"
+      },
+      "text": "Solicito ampliar el histórico a 3 años para este indicador.",
+      "createdAt": "2026-09-25T08:00:00-05:00",
+      "status": null,
+      "decision": null,
+      "replies": []
+    }
+  ],
+  "page": 1,
+  "pageSize": 20,
+  "totalItems": 2,
+  "permissions": {
+    "canComment": true,
+    "canReply": true,
+    "canRequestChange": false,
+    "canResolve": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "dimension": "fin",
+      "label": "Financiera",
+      "tone": "ok",
+      "text": "alineado con el sector (45% vs. 43% promedio). Mantener el peso actual."
+    },
+    {
+      "dimension": "op",
+      "label": "Operativa",
+      "tone": "ok",
+      "text": "alineado con el sector (30% vs. 30% promedio). Mantener el peso actual."
+    },
+    {
+      "dimension": "trans",
+      "label": "Transversal",
+      "tone": "ok",
+      "text": "alineado con el sector (25% vs. 28% promedio). Mantener el peso actual."
+    }
+  ],
+  "status": "suggestion",
+  "generatedBy": {
+    "model": "mock-recommendations",
+    "version": "1"
+  },
+  "permissions": {}
+}

@@ -1,0 +1,9 @@
+{
+  "id": "op_01J9ZM0Q4A",
+  "kind": "analysis_generation",
+  "status": "running",
+  "progressPct": 45,
+  "messageKey": "operation.analysisGeneration.calculating",
+  "result": null,
+  "error": null
+}

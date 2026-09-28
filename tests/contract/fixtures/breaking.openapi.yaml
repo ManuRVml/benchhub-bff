@@ -1,0 +1,1420 @@
+# Planted breaking change for the oasdiff gate (P3-02): contracts/openapi.yaml with the required V-03 response
+# property `permissions` removed. `pnpm contract:diff contracts/openapi.yaml <this file>` must exit non-zero.
+openapi: 3.1.0
+info:
+  title: eco-comparator-bff
+  version: 0.1.0
+  description: HTTP contract of the Eco-Comparador BFF, generated from the Zod registry (src/contracts/registry.ts).
+components:
+  schemas:
+    ApiError:
+      type: object
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+        traceId:
+          type: string
+        details:
+          description: "Optional diagnostic data: any JSON value. The UI never shows it verbatim."
+      required:
+        - code
+        - message
+        - traceId
+      additionalProperties: false
+    V03Response:
+      type: object
+      properties:
+        banner:
+          oneOf:
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - ok
+                data:
+                  type: object
+                  properties:
+                    text:
+                      type: string
+                    aiStatus:
+                      type: string
+                      enum:
+                        - suggestion
+                  required:
+                    - text
+                    - aiStatus
+                  additionalProperties: false
+              required:
+                - status
+                - data
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - error
+                errorCode:
+                  type: string
+                  minLength: 1
+              required:
+                - status
+                - errorCode
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - forbidden
+              required:
+                - status
+              additionalProperties: false
+        executiveSummary:
+          oneOf:
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - ok
+                data:
+                  type: object
+                  properties:
+                    total:
+                      type: integer
+                      minimum: 0
+                    active:
+                      type: integer
+                      minimum: 0
+                    published:
+                      type: integer
+                      minimum: 0
+                    inProgress:
+                      type: integer
+                      minimum: 0
+                    avgCoveragePct:
+                      type: number
+                      minimum: 0
+                      maximum: 100
+                  required:
+                    - total
+                    - active
+                    - published
+                    - inProgress
+                    - avgCoveragePct
+                  additionalProperties: false
+              required:
+                - status
+                - data
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - error
+                errorCode:
+                  type: string
+                  minLength: 1
+              required:
+                - status
+                - errorCode
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - forbidden
+              required:
+                - status
+              additionalProperties: false
+        enabledAnalyses:
+          oneOf:
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - ok
+                data:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        minLength: 1
+                      title:
+                        type: string
+                      status:
+                        type: string
+                        enum:
+                          - draft
+                          - in_progress
+                          - in_review
+                          - published
+                      description:
+                        type: string
+                      updatedAt:
+                        type: string
+                        format: date-time
+                      ownerName:
+                        type: string
+                      targetRoute:
+                        type: string
+                    required:
+                      - id
+                      - title
+                      - status
+                      - description
+                      - updatedAt
+                      - ownerName
+                      - targetRoute
+                    additionalProperties: false
+              required:
+                - status
+                - data
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - error
+                errorCode:
+                  type: string
+                  minLength: 1
+              required:
+                - status
+                - errorCode
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - forbidden
+              required:
+                - status
+              additionalProperties: false
+        peerNews:
+          oneOf:
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - ok
+                data:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        minLength: 1
+                      companyId:
+                        type: string
+                        minLength: 1
+                      companyName:
+                        type: string
+                      colorKey:
+                        type: string
+                      initials:
+                        type: string
+                      impact:
+                        type: string
+                        enum:
+                          - up
+                          - down
+                      headline:
+                        type: string
+                      source:
+                        type: string
+                    required:
+                      - id
+                      - companyId
+                      - companyName
+                      - colorKey
+                      - initials
+                      - impact
+                      - headline
+                      - source
+                    additionalProperties: false
+              required:
+                - status
+                - data
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - error
+                errorCode:
+                  type: string
+                  minLength: 1
+              required:
+                - status
+                - errorCode
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - forbidden
+              required:
+                - status
+              additionalProperties: false
+        marketIndicators:
+          oneOf:
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - ok
+                data:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        minLength: 1
+                      label:
+                        type: string
+                      value:
+                        type: number
+                      unit:
+                        type: string
+                        enum:
+                          - percent
+                          - points
+                          - ratio_x
+                          - rating
+                          - kboe
+                          - usd_b
+                          - usd_bn
+                          - cop_per_usd
+                          - bcop
+                          - mmcop
+                          - cop
+                      deltaPct:
+                        type: number
+                      trend:
+                        type: string
+                        enum:
+                          - up
+                          - down
+                    required:
+                      - id
+                      - label
+                      - value
+                      - unit
+                      - deltaPct
+                      - trend
+                    additionalProperties: false
+              required:
+                - status
+                - data
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - error
+                errorCode:
+                  type: string
+                  minLength: 1
+              required:
+                - status
+                - errorCode
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - forbidden
+              required:
+                - status
+              additionalProperties: false
+      required:
+        - banner
+        - executiveSummary
+        - enabledAnalyses
+        - peerNews
+        - marketIndicators
+      additionalProperties: false
+    V09Response:
+      type: object
+      properties:
+        analysis:
+          type: object
+          properties:
+            id:
+              type: string
+              minLength: 1
+            title:
+              type: string
+            status:
+              type: string
+              enum:
+                - draft
+                - in_progress
+                - in_review
+                - published
+            lifecycleState:
+              type: string
+              enum:
+                - preparacion
+                - vista_previa
+                - publicado
+            periodLabel:
+              type: object
+              properties:
+                year:
+                  type: integer
+                quarter:
+                  type: integer
+                  minimum: 1
+                  maximum: 4
+              required:
+                - year
+                - quarter
+              additionalProperties: false
+          required:
+            - id
+            - title
+            - status
+            - lifecycleState
+            - periodLabel
+          additionalProperties: false
+        horizon:
+          type: string
+          enum:
+            - tbg
+            - ilp
+            - union
+        horizonOptions:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+                enum:
+                  - tbg
+                  - ilp
+                  - union
+              labelKey:
+                type: string
+            required:
+              - id
+              - labelKey
+            additionalProperties: false
+        modules:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+                enum:
+                  - actionRow
+                  - companyCoverage
+                  - peerAverageComparison
+                  - companyComparison
+                  - tbgIndicatorComparator
+                  - futureAspiration
+                  - tbgHorizon
+                  - tbgDimensionWeights
+                  - comparisonProfiles
+                  - reportSummary
+                  - footerActions
+              order:
+                type: integer
+                minimum: 1
+              isGated:
+                type: boolean
+              visibleInHorizons:
+                type: array
+                items:
+                  type: string
+                  enum:
+                    - tbg
+                    - ilp
+                    - union
+            required:
+              - id
+              - order
+              - isGated
+              - visibleInHorizons
+            additionalProperties: false
+        companySet:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+                minLength: 1
+              name:
+                type: string
+              colorKey:
+                type: string
+            required:
+              - id
+              - name
+              - colorKey
+            additionalProperties: false
+        analysisTabs:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+                enum:
+                  - configuration
+                  - results
+                  - presentation
+              isEnabled:
+                type: boolean
+              presentationId:
+                type:
+                  - string
+                  - "null"
+                minLength: 1
+            required:
+              - id
+              - isEnabled
+            additionalProperties: false
+        permissions:
+          type: object
+          additionalProperties:
+            type: boolean
+      required:
+        - analysis
+        - horizon
+        - horizonOptions
+        - modules
+        - companySet
+        - analysisTabs
+        - permissions
+      additionalProperties: false
+    V10Response:
+      type: object
+      properties:
+        kpis:
+          oneOf:
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - ok
+                data:
+                  type: object
+                  properties:
+                    companies:
+                      type: integer
+                      minimum: 0
+                    complete:
+                      type: integer
+                      minimum: 0
+                    incomplete:
+                      type: integer
+                      minimum: 0
+                    pendingIndicators:
+                      type: integer
+                      minimum: 0
+                  required:
+                    - companies
+                    - complete
+                    - incomplete
+                    - pendingIndicators
+                  additionalProperties: false
+              required:
+                - status
+                - data
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - error
+                errorCode:
+                  type: string
+                  minLength: 1
+              required:
+                - status
+                - errorCode
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - forbidden
+              required:
+                - status
+              additionalProperties: false
+        insights:
+          oneOf:
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - ok
+                data:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        minLength: 1
+                      text:
+                        type: string
+                    required:
+                      - id
+                      - text
+                    additionalProperties: false
+              required:
+                - status
+                - data
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - error
+                errorCode:
+                  type: string
+                  minLength: 1
+              required:
+                - status
+                - errorCode
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - forbidden
+              required:
+                - status
+              additionalProperties: false
+        companies:
+          oneOf:
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - ok
+                data:
+                  type: object
+                  properties:
+                    items:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            minLength: 1
+                          name:
+                            type: string
+                          initials:
+                            type: string
+                          colorKey:
+                            type: string
+                          coveragePct:
+                            type: integer
+                            minimum: 0
+                            maximum: 100
+                          coverageStatus:
+                            type: string
+                            enum:
+                              - complete
+                              - needs_review
+                              - incomplete
+                          missingCount:
+                            type: integer
+                            minimum: 0
+                        required:
+                          - id
+                          - name
+                          - initials
+                          - colorKey
+                          - coveragePct
+                          - coverageStatus
+                          - missingCount
+                        additionalProperties: false
+                    addableCompanies:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            minLength: 1
+                          name:
+                            type: string
+                        required:
+                          - id
+                          - name
+                        additionalProperties: false
+                  required:
+                    - items
+                    - addableCompanies
+                  additionalProperties: false
+              required:
+                - status
+                - data
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - error
+                errorCode:
+                  type: string
+                  minLength: 1
+              required:
+                - status
+                - errorCode
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - forbidden
+              required:
+                - status
+              additionalProperties: false
+        selected:
+          oneOf:
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - ok
+                data:
+                  type: object
+                  properties:
+                    companyId:
+                      type: string
+                      minLength: 1
+                    groups:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          dimension:
+                            type: string
+                            enum:
+                              - fin
+                              - op
+                              - trans
+                          totalPct:
+                            type: number
+                            minimum: 0
+                          items:
+                            type: array
+                            items:
+                              type: object
+                              properties:
+                                indicatorId:
+                                  type: string
+                                  minLength: 1
+                                label:
+                                  type: string
+                                value:
+                                  type:
+                                    - number
+                                    - "null"
+                                unit:
+                                  type: string
+                                  enum:
+                                    - percent
+                                    - points
+                                    - ratio_x
+                                    - rating
+                                    - kboe
+                                    - usd_b
+                                    - usd_bn
+                                    - cop_per_usd
+                                    - bcop
+                                    - mmcop
+                                    - cop
+                                isEstimate:
+                                  type: boolean
+                                justification:
+                                  type:
+                                    - string
+                                    - "null"
+                              required:
+                                - indicatorId
+                                - label
+                                - value
+                                - unit
+                                - isEstimate
+                                - justification
+                              additionalProperties: false
+                        required:
+                          - dimension
+                          - totalPct
+                          - items
+                        additionalProperties: false
+                    missing:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          indicatorId:
+                            type: string
+                            minLength: 1
+                          label:
+                            type: string
+                          value:
+                            type: "null"
+                          unit:
+                            type: string
+                            enum:
+                              - percent
+                              - points
+                              - ratio_x
+                              - rating
+                              - kboe
+                              - usd_b
+                              - usd_bn
+                              - cop_per_usd
+                              - bcop
+                              - mmcop
+                              - cop
+                        required:
+                          - indicatorId
+                          - label
+                          - value
+                          - unit
+                        additionalProperties: false
+                  required:
+                    - companyId
+                    - groups
+                    - missing
+                  additionalProperties: false
+              required:
+                - status
+                - data
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - error
+                errorCode:
+                  type: string
+                  minLength: 1
+              required:
+                - status
+                - errorCode
+              additionalProperties: false
+            - type: object
+              properties:
+                status:
+                  type: string
+                  enum:
+                    - forbidden
+              required:
+                - status
+              additionalProperties: false
+        permissions:
+          type: object
+          additionalProperties:
+            type: boolean
+      required:
+        - kpis
+        - insights
+        - companies
+        - selected
+        - permissions
+      additionalProperties: false
+    V11Response:
+      type: object
+      properties:
+        categories:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+                minLength: 1
+              label:
+                type: string
+            required:
+              - id
+              - label
+            additionalProperties: false
+        category:
+          type: string
+          minLength: 1
+        rows:
+          type: array
+          items:
+            type: object
+            properties:
+              indicatorId:
+                type: string
+                minLength: 1
+              label:
+                type: string
+              unit:
+                type: string
+                enum:
+                  - percent
+                  - points
+                  - ratio_x
+                  - rating
+                  - kboe
+                  - usd_b
+                  - usd_bn
+                  - cop_per_usd
+                  - bcop
+                  - mmcop
+                  - cop
+              geValue:
+                type: number
+              peerAvg:
+                type: number
+              hasDetail:
+                type: boolean
+            required:
+              - indicatorId
+              - label
+              - unit
+              - geValue
+              - peerAvg
+              - hasDetail
+            additionalProperties: false
+        peerAvgCompanies:
+          type: array
+          items:
+            type: string
+            minLength: 1
+        permissions:
+          type: object
+          additionalProperties:
+            type: boolean
+      required:
+        - categories
+        - category
+        - rows
+        - peerAvgCompanies
+        - permissions
+      additionalProperties: false
+    V12Response:
+      type: object
+      properties:
+        company:
+          type: object
+          properties:
+            id:
+              type: string
+              minLength: 1
+            name:
+              type: string
+            colorKey:
+              type: string
+          required:
+            - id
+            - name
+            - colorKey
+          additionalProperties: false
+        summary:
+          type: object
+          properties:
+            wins:
+              type: integer
+              minimum: 0
+            total:
+              type: integer
+              minimum: 0
+            winPct:
+              type: number
+              minimum: 0
+              maximum: 100
+          required:
+            - wins
+            - total
+            - winPct
+          additionalProperties: false
+        groups:
+          type: array
+          items:
+            type: object
+            properties:
+              category:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    minLength: 1
+                  label:
+                    type: string
+                required:
+                  - id
+                  - label
+                additionalProperties: false
+              wins:
+                type: integer
+                minimum: 0
+              total:
+                type: integer
+                minimum: 0
+              rows:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    indicatorId:
+                      type: string
+                      minLength: 1
+                    code:
+                      type: string
+                      minLength: 1
+                    label:
+                      type: string
+                    unit:
+                      type: string
+                      enum:
+                        - percent
+                        - points
+                        - ratio_x
+                        - rating
+                        - kboe
+                        - usd_b
+                        - usd_bn
+                        - cop_per_usd
+                        - bcop
+                        - mmcop
+                        - cop
+                    geValue:
+                      type: number
+                    companyValue:
+                      type:
+                        - number
+                        - "null"
+                    diff:
+                      type:
+                        - number
+                        - "null"
+                    diffUnit:
+                      type: string
+                      enum:
+                        - percent
+                        - points
+                        - ratio_x
+                        - rating
+                        - kboe
+                        - usd_b
+                        - usd_bn
+                        - cop_per_usd
+                        - bcop
+                        - mmcop
+                        - cop
+                    lowerIsBetter:
+                      type: boolean
+                    outcome:
+                      type:
+                        - string
+                        - "null"
+                      enum:
+                        - above
+                        - below
+                        - null
+                    hasDetail:
+                      type: boolean
+                  required:
+                    - indicatorId
+                    - code
+                    - label
+                    - unit
+                    - geValue
+                    - companyValue
+                    - diff
+                    - diffUnit
+                    - lowerIsBetter
+                    - outcome
+                    - hasDetail
+                  additionalProperties: false
+            required:
+              - category
+              - wins
+              - total
+              - rows
+            additionalProperties: false
+        permissions:
+          type: object
+          additionalProperties:
+            type: boolean
+      required:
+        - company
+        - summary
+        - groups
+        - permissions
+      additionalProperties: false
+    V13Response:
+      type: object
+      properties:
+        categoryOptions:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+                minLength: 1
+              label:
+                type: string
+            required:
+              - id
+              - label
+            additionalProperties: false
+        rows:
+          type: array
+          items:
+            type: object
+            properties:
+              category:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    minLength: 1
+                  label:
+                    type: string
+                  tier:
+                    type: integer
+                    minimum: 1
+                    maximum: 4
+                required:
+                  - id
+                  - label
+                  - tier
+                additionalProperties: false
+              indicatorId:
+                type: string
+                minLength: 1
+              label:
+                type: string
+              unit:
+                type: string
+                enum:
+                  - percent
+                  - points
+                  - ratio_x
+                  - rating
+                  - kboe
+                  - usd_b
+                  - usd_bn
+                  - cop_per_usd
+                  - bcop
+                  - mmcop
+                  - cop
+              geValue:
+                type: number
+              peerAvg:
+                type: number
+            required:
+              - category
+              - indicatorId
+              - label
+              - unit
+              - geValue
+              - peerAvg
+            additionalProperties: false
+        permissions:
+          type: object
+          additionalProperties:
+            type: boolean
+      required:
+        - categoryOptions
+        - rows
+        - permissions
+      additionalProperties: false
+    V14Response:
+      type: object
+      properties:
+        findings:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+                minLength: 1
+              text:
+                type: string
+            required:
+              - id
+              - text
+            additionalProperties: false
+          maxItems: 5
+        status:
+          type: string
+          enum:
+            - suggestion
+        generatedBy:
+          type: object
+          properties:
+            model:
+              type: string
+            version:
+              type: string
+          required:
+            - model
+            - version
+          additionalProperties: false
+        permissions:
+          type: object
+          additionalProperties:
+            type: boolean
+      required:
+        - findings
+        - status
+        - generatedBy
+        - permissions
+      additionalProperties: false
+  parameters: {}
+paths:
+  /api/v1/views/home:
+    get:
+      operationId: getHomeView
+      summary: V-03 view data
+      tags:
+        - V-03
+      responses:
+        "200":
+          description: V-03 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/V03Response"
+        4XX:
+          description: Client error (ApiError body)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        5XX:
+          description: Server error (ApiError body)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+  /api/v1/views/results-header/{analysisId}:
+    get:
+      operationId: getResultsHeaderView
+      summary: V-09 view data
+      tags:
+        - V-09
+      parameters:
+        - schema:
+            type: string
+          required: true
+          name: analysisId
+          in: path
+      responses:
+        "200":
+          description: V-09 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/V09Response"
+        4XX:
+          description: Client error (ApiError body)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        5XX:
+          description: Server error (ApiError body)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+  /api/v1/views/company-coverage/{analysisId}:
+    get:
+      operationId: getCompanyCoverageView
+      summary: V-10 view data
+      tags:
+        - V-10
+      parameters:
+        - schema:
+            type: string
+          required: true
+          name: analysisId
+          in: path
+      responses:
+        "200":
+          description: V-10 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/V10Response"
+        4XX:
+          description: Client error (ApiError body)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        5XX:
+          description: Server error (ApiError body)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+  /api/v1/views/peer-average-comparison/{analysisId}:
+    get:
+      operationId: getPeerAverageComparisonView
+      summary: V-11 view data
+      tags:
+        - V-11
+      parameters:
+        - schema:
+            type: string
+          required: true
+          name: analysisId
+          in: path
+      responses:
+        "200":
+          description: V-11 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/V11Response"
+        4XX:
+          description: Client error (ApiError body)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        5XX:
+          description: Server error (ApiError body)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+  /api/v1/views/company-comparison/{analysisId}:
+    get:
+      operationId: getCompanyComparisonView
+      summary: V-12 view data
+      tags:
+        - V-12
+      parameters:
+        - schema:
+            type: string
+          required: true
+          name: analysisId
+          in: path
+      responses:
+        "200":
+          description: V-12 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/V12Response"
+        4XX:
+          description: Client error (ApiError body)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        5XX:
+          description: Server error (ApiError body)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+  /api/v1/views/report-summary/{analysisId}:
+    get:
+      operationId: getReportSummaryView
+      summary: V-13 view data
+      tags:
+        - V-13
+      parameters:
+        - schema:
+            type: string
+          required: true
+          name: analysisId
+          in: path
+      responses:
+        "200":
+          description: V-13 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/V13Response"
+        4XX:
+          description: Client error (ApiError body)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        5XX:
+          description: Server error (ApiError body)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+  /api/v1/views/ai-findings/{analysisId}:
+    get:
+      operationId: getAiFindingsView
+      summary: V-14 view data
+      tags:
+        - V-14
+      parameters:
+        - schema:
+            type: string
+          required: true
+          name: analysisId
+          in: path
+      responses:
+        "200":
+          description: V-14 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/V14Response"
+        4XX:
+          description: Client error (ApiError body)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        5XX:
+          description: Server error (ApiError body)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+webhooks: {}

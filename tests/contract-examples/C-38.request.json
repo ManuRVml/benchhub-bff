@@ -1,0 +1,9 @@
+{
+  "name": "profile-name",
+  "description": "optional-description",
+  "companyIds": [
+    "branded-id",
+    "branded-id"
+  ],
+  "isDefault": false
+}
